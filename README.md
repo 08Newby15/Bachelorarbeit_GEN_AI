@@ -4,6 +4,8 @@ Im Ordner Testing befinden sich:
 * die erzeugten Texte der LLMs
 * die erzeugten Bilder der LLMs
 * * Die Bilder der lokalen LLMs sind in den Pdfs zu finden
+ 
+----------------------------------------------------------------------------------------------------------
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
 
 
