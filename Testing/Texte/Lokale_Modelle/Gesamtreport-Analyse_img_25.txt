@@ -1,0 +1,88 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_25.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes:
+    
+    *   **Name:** Schmetterling.
+    *   **Farbe:** Orange, Schwarz.
+    *   **Verhalten:** Auf Blüte sitzend.
+    *   **Umgebung:** Grüne Blätter.
+    *   **Anzahl:** Ein Exemplar.
+    *   **Hintergrund:** Unschärfer Wald.
+  Benötigte Zeit: 16.400 ms
+
+  Gesamte Analysezeit (Gemma): 16.400 ms
+
+2. Generierter Text (Llama 3.1):
+    **Entdecke die Schönheit der Natur mit mir!**
+    Hey Kids! Heute möchte ich euch ein spannendes Bild vorstellen. Seht ihr das? Ein wunderschöner Schmetterling sitzt auf einer Blüte und zeigt uns sein prächtiges Farbenspiel in Orange und Schwarz.
+    Diese Schönheit ist nicht alleine, sondern umgeben von grünen Blättern. Euch fällt vielleicht auch der Hintergrund auf - ein dichter Wald. Aber was macht diesen Schmetterling so besonders? Vielleicht ist es seine Fähigkeit, sich an jede Blüte zu klammern und sie zu bereichern mit dem Nektar. Ohne ihn gäbe es keine Nahrung für die Vögel oder andere Tiere.
+    Der Schmetterling selbst hat zwei besondere Teile: Flügel und Beine. Die Flügel ermöglichen ihm das Fliegen, während die Beine helfen ihm bei der Landung auf den Blättern. Was macht euch diese Bilder so faszinativ?
+   Benötigte Zeit: 5.352 ms
+
+3. Essenz (Llama 3.1):
+    Hier ist die Kernaussage des Textes in 3 kurzen Sätzen:
+     Ein Schmetterling sitzt auf einer Blüte und zeigt seine wunderschönen Farben. **Der Schmetterling bringt Nektar, der andere Tiere ernährt**. Mit seinen Flügeln kann er fliegen, mit seinen Beinen landet er sicher auf den Blättern.
+    Ich hoffe, diese Kurzversion ist für das neugierige Kind leicht zu verstehen und ansprechend!
+   Benötigte Zeit: 1.098 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Schmetterling
+    *   Farbe: Orange/Schwarz
+    *   Anzahl: Ein Exemplar
+    *   Verhalten: Auf Blüte sitzend
+    *   Umgebung: Grüne Blätter, Unschärfer Wald
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.707 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_25.jpg
+  Analyse:
+    *   **Tier/Pflanze:** Es gibt keine Tiere im Bild. Es zeigt eine Blume mit der Bezeichnung "Kamille" (nach dem Aussehen kann es auch ein Campanula sein).
+    *   **Farbe**: Die Kamillenblüte ist vorherrschend in einem hellen, lebhaften Violett.
+    *   **Verhalten:** Sie scheint zu blühen und ist nicht unter Druck oder Stress zu stehen. Die Blattblätter sind frisch gefaltet.
+    *   **Umgebung**: Das Bild zeigt eine Graslandschaft mit einigen Kamillen in der Nähe einer Wiese. In unmittelbarer Umgebung gibt es einen kleinen See, dessen Wasser im Hintergrund sichtbar ist.
+    *   **Anzahl:** Es sind mehrere Blüten zu sehen.
+    *   **Hintergrund**: Der Bildhintergrund ist von einer Graslandschaft geprägt. Das Bild wird durch eine leichte Schattenung beeinflusst, was den Eindruck erweckt, dass es sich um eine Wiese handelt und die Kamillen in der Nähe eines kleinen Sees wachsen.
+    *   **Beobachtung**: Es ist ein sehr warmes Tag. Die Sonne scheint nicht direkt auf das Bild. Der Himmel ist wolkenlos.
+  Benötigte Zeit: 11.140 ms
+
+  Gesamte Analysezeit (Llama Vision): 11.140 ms
+
+B. Generierter Text (Deepseek):
+    Liebe Kinder, habt ihr je eine so schöne Blume wie diese gesehen? Sie ist ein Kamilleblumchen, und es ist nicht der einzige! Auf dem Bild seht ihr mehrere dieser Blumen in einem frischen, lebhaften Violett. Die Blätter sind frisch gefaltet, was bedeutet, dass sie gesund und sorgfältig gepflegt werden.
+    Die Umgebung ist wunderschön – eine grüne Wiese mit einigen Kamillen nahe einem kleinen See. Das Wasser des Sees ist klar, und der Himmel ist wolkenlos, was den Tag warm und sonnig macht, aber die Sonne scheint nicht direkt auf die Blumen.
+    Kannte ihr das déjà? Diese Blume ist so hübsch in ihrer Umgebung!
+   Benötigte Zeit: 12.101 ms
+
+C. Essenz (Deepseek):
+    Liebe Kinder, die Geschichte handelt von schönen Kamilleblumen in einem frischen, grünen Umfeld an einem See. Die Blumen sind gesund und lebhaft, während die Umgebung idyllisch und friedlich ist.
+   Benötigte Zeit: 2.656 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - Tier/Pflanze: Keine Tiere, Kamille/Campanula  
+    - Farbe: Helles Violett  
+    - Verhalten: Blüht, frische Blätter  
+    - Umgebung: Grasland, Wiese, See  
+    - Anzahl: Mehrere Blüten  
+    - Hintergrund: Graslandschaft, Schatten, Lake
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.307 ms
+
+--- Verwendete Originalbilder ---
+- img_25.jpg

@@ -1,0 +1,113 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_26.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes, die Ihren Kriterien entspricht:
+    
+    *   **Name:** Blauer Delphinium
+    *   **Farbe:** Blau, Grün
+    *   **Verhalten:** Aufrecht stehen
+    *   **Umgebung:** Gartenbeet
+    *   **Anzahl:** Mehrere
+    *   **Hintergrund:** Unschärfer Wald
+  Benötigte Zeit: 17.696 ms
+
+  Gesamte Analysezeit (Gemma): 17.696 ms
+
+2. Generierter Text (Llama 3.1):
+    "Hallo Kinder!
+    Heute möchte ich euch über ein wunderschönes Blumenbild erzählen, das so viel zu sagen hat! Seht ihr das Bild vor euren Augen? Es gibt uns einen Blick in den Garten, wo viele blühende Delphinien stehen. Diese wunderbaren Pflanzen haben eine besondere Fähigkeit: Sie können sich aufrecht stellen und ihre Blüten hoch über die Erde recken.
+    Betrachtet ihr euer Bild noch einmal? Seht ihr das Grün der Pflanzen und den blauen Himmel im Hintergrund? Es scheint, als ob die Delphinien gleich in den Wald links davon hineingewachsen sind. Die Farben auf dem Bild zeigen uns, dass es eine wunderschöne warme Sommertag ist.
+    Aber was macht diese Blumen so besonders? Eure Aufgabe wäre jetzt, noch einmal sorgfältig zu schauen und nachzudenken: Was machen Sie dagegen, um Ihren Stängel zu halten? Wissen Sie, dass manche Pflanzen sogar aufrecht stehen können?
+    Lassen sie uns einen Blick in die Natur werfen! Wie sehen wir Pflanzen im Alltag? Gibt es bestimmte Arten von Blumen oder Pflanzen, die sich besonders gut darin behaupten können? Habt ihr bemerkt, dass einige von euch vielleicht sogar eine davon im eigenen Garten haben?"
+   Benötigte Zeit: 6.042 ms
+
+3. Essenz (Llama 3.1):
+    Ein wunderschönes Text über Delphinien!
+    Hier ist die Kernaussage des Textes in 3 kurzen Sätzen:
+    * Die Delphinie ist eine Pflanze, die sich aufrecht stellen kann und ihre Blüten hoch oben reckt.
+    * Dies ermöglicht es der Delphinie, einen wunderbaren Blick über den Garten zu haben!
+    * Manche Pflanzen wie die Delphinie können sogar allein aufrecht stehen, ohne Hilfe!
+   Benötigte Zeit: 987 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Delphinium
+    *   Pflanze: Blumen
+    *   Farbe: Blau/Grün
+    *   Anzahl: Mehrere
+    *   Verhalten: Aufrecht stehen
+    *   Umgebung: Gartenbeet
+    *   Hintergrund: Unschärfer Wald
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.924 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_26.jpg
+  Analyse:
+    **Bildanalyse**
+    
+    ### **Motiv**
+    
+    *   **Name:** Pflanze: Viola x wittrockiana (Pansy)
+    *   **Farbe:** Blütenblätter und Blüte sind vorwiegend in verschiedenen Farbtönen von blau, violett, weiß und gelb.
+    *   **Verhalten:** Die Pflanzen stehen aufrecht. Zwei davon sind voller Blüten.
+    *   **Umgebung:** Graslandschaft mit vielen anderen Blumen.
+    
+    ### **Bildhintergrund**
+    
+    *   **Hauptfarben:** Hauptsächlich grün und braun, in der Mitte des Bildes ist es hellgrau, auf dem sich die Pflanzen befinden.
+    *   **Details:** Der Boden besteht aus kleinen Steinen. Die Blumen stehen im Gras.
+    
+    ### **Gegenstand**
+    
+    *   **Name:** Viola x wittrockiana (Pansy)
+    *   **Farben:** Blütenblätter und Blüte sind vorwiegend in verschiedenen Farbtönen von blau, violett, weiß und gelb.
+    *   **Verhalten:** Die Pflanzen stehen aufrecht. Zwei davon sind voller Blüten.
+    *   **Umgebung:** Graslandschaft mit vielen anderen Blumen.
+    
+    ### **Hinweis**
+    
+    Die Pansy ist eine Kreuzung zwischen Viola cornuta und Viola pedata. Es gibt verschiedene Farbsorten, wie die im Bild zu sehen. Die Pflanze kann in verschiedenen Formen wachsen.
+  Benötigte Zeit: 12.130 ms
+
+  Gesamte Analysezeit (Llama Vision): 12.130 ms
+
+B. Generierter Text (Deepseek):
+    **Die faszinierende Welt der Pansy-Blumen**
+    Hey ihr kleinen Botaniker! Schaut euch mal diese wunderschönen Blumen an – es sind Pansys, auch Viola x wittrockiana genannt. Seht ihr die Farben? Sie sind blau, violett, weiß und gelb, jede Blume ist ein bisschen anders! Die Pflanzen stehen aufrecht im Gras, manche sind so voll mit Blüten, dass sie richtig strahlen. Um sie herum wachsen viele andere Blumen in einem grünen und braunen Garten.
+    Die Pansy ist eine Mischung aus zwei Arten: Viola cornuta und Viola pedata. Jede Blume hat fünf Blütenblätter, manchmal sind sie sogar gesprenkelt oder gestreift. Ob ihr noticed die kleinen Steine am Boden? Das ist der perfekte Platz für diese zauberhaften Pflanzen. 
+    Nächstes Mal, wenn ihr im Garten seid, schaut euch mal nach diesen farbenfrohen Blumen um – sie sind einfach fantastisch! 😊
+   Benötigte Zeit: 15.532 ms
+
+C. Essenz (Deepseek):
+    **Die wichtigsten Informationen über Pansy-Blumen:**  
+    Pansys sind bunte Blumen mit Farben wie blau, violett, weiß und gelb. Sie wachsen in einem Garten und können manchmal gesprenkelt oder gestreift sein. Du findest sie im Gras und solltest nächstes Mal nach ihnen Ausschau halten! 😊
+   Benötigte Zeit: 3.773 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - **Pflanze:** Viola x wittrockiana  
+    - **Farbe:** Blau, Violett, Weiss, Gelb  
+    - **Anzahl:** Zwei  
+    - **Verhalten:** Aufrecht  
+    - **Umgebung:** Grasland, andere Blumen  
+    - **Hintergrund:** Grün, Braun,Hellgrau  
+    - **Boden:** Kleine Steine
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.382 ms
+
+--- Verwendete Originalbilder ---
+- img_26.jpg

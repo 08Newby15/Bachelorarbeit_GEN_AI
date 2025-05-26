@@ -1,0 +1,62 @@
+🧠 Rolle 1: Präziser Beobachter
+Startzeit (ms): wird gemessen
+Analyse:
+
+Name: Schwarzschwanzpfeifente
+
+Farbe: Braun, schwarz, rosa
+
+Verhalten: Schwimmt ruhig
+
+Umgebung: Seerosen, Wasser
+
+Anzahl: Vier Enten
+
+Hintergrund: Grünes Wasser
+
+Kükenfarbe: Gelb, schwarz
+
+Kükenverhalten: Folgen Mutter
+
+Wasserdetails: Klar, Pflanzen
+
+Blätter: Groß, grün
+
+Endzeit: gespeichert
+
+🖊️ Rolle 2: Kindgerechter Textautor
+Startzeit (ms): wird gemessen
+
+Schau mal genau hin! Auf dem Bild siehst du eine Entenmama mit ihren zwei flauschigen Küken. Es handelt sich um eine Schwarzschwanzpfeifente – so einen Namen vergisst man nicht so schnell! Die Mama hat braunes Gefieder und einen rosa Schnabel. Ihre Küken sind klein, schwarz-gelb gestreift und paddeln neugierig hinter ihr her. Sie schwimmen in einem Teich mit großen grünen Seerosen. Das Wasser ist ganz ruhig, und die Enten fühlen sich dort richtig wohl. Ist es nicht toll, wie Tiere sich um ihren Nachwuchs kümmern?
+
+Endzeit: gespeichert
+
+📌 Rolle 3: Kernaussage für Kinder
+Startzeit (ms): wird gemessen
+
+Eine Entenmama schwimmt mit ihren Küken im Teich.
+Die Küken sind klein und süß.
+Sie leben zwischen Seerosen im Wasser.
+
+Endzeit: gespeichert
+
+📎 Rolle 4: Finale Stichpunktliste
+Startzeit (ms): wird gemessen
+
+Zusammenfassung:
+
+Tierart: Pfeifente
+
+Farbe: Braun, rosa
+
+Anzahl: Vier Enten
+
+Verhalten: Schwimmen ruhig
+
+Umgebung: Wasser, Seerosen
+
+Hintergrund: Grünes Wasser
+
+Küken: Gelb-schwarz
+
+Kükenverhalten: Folgen Mutter

@@ -1,0 +1,87 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_14.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes gemäß den Anweisungen:
+    
+    *   **Tier:** Reiher
+    *   **Farben:** Weiß, Schwarz, Rot
+    *   **Verhalten:** Gehen, suchen
+    *   **Umgebung:** Grasland
+    *   **Anzahl:** Drei
+    *   **Hintergrund:** Grünes Feld
+  Benötigte Zeit: 5.608 ms
+
+  Gesamte Analysezeit (Gemma): 5.608 ms
+
+2. Generierter Text (Llama 3.1):
+    Bilder erzählen oft eine Geschichte, aber manchmal müssen wir sie selbst aufschlüsseln, um zu verstehen, was sich darin verbirgt. Lass uns gemeinsam das Bild unserer Reiher betrachten.
+    Wir sehen drei weiße Reiher mit schwarzem Hals und roter Schnabel auf dem Bild. Sie gehen allein oder gemeinsam durch ein grünes Grasland. 
+    Die Reiher suchen etwas. Vielleicht nach Nahrung, um ihre Energie zu tanken. Wir wissen, dass sie sehr gute Jäger sind.
+    Der Grüne Hintergrund des Bildes besteht aus einem Feld, in dem vielleicht die drei Reihers gerne leben und sich aufhalten. Sie genießen sicherlich den Frieden dieses grünen Oase.
+   Benötigte Zeit: 4.830 ms
+
+3. Essenz (Llama 3.1):
+    Die Kernaussage für Kinder:
+    Reiher suchen nach Nahrung im Grasland. Die Reiher sind gute Jäger!
+   Benötigte Zeit: 337 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Reiher
+    *   Farben: Weiß, Schwarz, Rot
+    *   Verhalten: Gehen, Suchen
+    *   Umgebung: Grasland
+    *   Anzahl: Drei
+    *   Hintergrund: Grünes Feld
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.569 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_14.jpg
+  Analyse:
+    *   **Tier:** Storch
+    *   **Farben:** Weiß und Schwarz
+    *   **Verhalten:** Der Storch steht auf einem Feld und blickt in Richtung des Betrachters. Seine Federn sind leicht nach hinten gewölbt.
+    *   **Umgebung:** Das Tier steht auf einer Wiese, die umgeben von Bäumen ist. In der Ferne ist ein weiteres Gebiet zu sehen.
+    *   **Anzahl:** Es gibt nur einen Storch in diesem Bild.
+    *   **Hintergrund:** Der Himmel wird vom Bildrand verdeckt. Auf dem Feld in der Nähe des Storches sind zwei weitere Vögel zu sehen, die sich von ihm unterscheiden.
+    
+    Das Bild zeigt eine weiße und schwarze Storch auf einem Feld. Die Federn des Tieres werden leicht nach hinten gewölbt. Es steht neben einer Wiese, die von Bäumen umgeben ist. In der Ferne ist ein weiterer Bereich zu sehen. Es gibt nur einen Storch in diesem Bild. Der Himmel wird vom Bildrand verdeckt. Auf dem Feld in der Nähe des Storches sind zwei weitere Vögel zu sehen.
+  Benötigte Zeit: 16.099 ms
+
+  Gesamte Analysezeit (Llama Vision): 16.099 ms
+
+B. Generierter Text (Deepseek):
+    Habt ihr jemals einen Storch gesehen? Auf dem Bild ist ein großer, schöner Storch zu sehen! Er hatweiße und schwarze Federn und steht auf einem Feld. SeineFedern sind sanft nach hinten gebogen, als wollte er etwas berühmen.Um ihn herum gibt es Bäume und eine weite Wiese. In der Ferne istnoch mehr Land zu erblicken. Der Himmel ist im Bild versteckt, aberdas stört nicht – unser Storch ist der Star hier! Neben ihm sindzwei kleinere Vögel auf dem Feld, die man leicht von ihm unterscheidenkann. Obwohl es viele Bäume gibt, ist der Storch allein in seinemBild und steht dort wie ein König auf seinem Feld.
+   Benötigte Zeit: 10.574 ms
+
+C. Essenz (Deepseek):
+    Der Text beschreibt einen großen, schönen Storch mit weißen und schwarzen Federn, der auf einem Feld steht und wie ein König wirkte. Er ist allein in seinem Bild und ist der Hauptfocus, umgeben von Bäumen und einer weiten Wiese.
+   Benötigte Zeit: 4.876 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - **Tier:** Storch  
+    - **Farben:** Weiß Schwarz  
+    - **Verhalten:** Steht Betrachter blickt Federn nach hinten gewölbt  
+    - **Umgebung:** Wiese Bäume umgeben Ferne Gebiet  
+    - **Anzahl:** Einziges Tier  
+    - **Hintergrund:** Himmel verdeckt Vögel in Nähe
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 15.992 ms
+
+--- Verwendete Originalbilder ---
+- img_14.jpg

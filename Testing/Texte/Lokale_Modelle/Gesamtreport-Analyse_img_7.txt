@@ -1,0 +1,95 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_7.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes in Form von Bullet Points:
+    
+    *   **Name:** Gepard
+    *   **Farbe:** Gelb, Schwarz
+    *   **Verhalten:** Sitzt, ruht
+    *   **Umgebung:** Grasland, Busch
+    *   **Anzahl:** Ein
+    *   **Hintergrund:** Verschwommen, Grün
+  Benötigte Zeit: 18.448 ms
+
+  Gesamte Analysezeit (Gemma): 18.448 ms
+
+2. Generierter Text (Llama 3.1):
+    **Hallo kleine Abenteurer!**
+    Wir gehen auf eine großartige Reise in die Wildnis Afrikas! Hier treffen wir auf einen wahren Superhelden der Tierwelt: den Gepard!
+    Der Gepard sitzt allein im weiten Grasland und schaut sich um. Seine gelben Flecken leuchten wie Sonnenstrahlen, während sein schwarz-weißes Fell wie ein Muster von einem alten Lederhandschuh aussieht.
+    Im Hintergrund ist der Busch dicht mit Blättern bewachsen, und die grünen Zweige blähen sich in der leichten Brise. Ein wundervolles Bild!
+    Aber was macht den Gepard so besonders? Seine Fähigkeit, mit einer Geschwindigkeit von bis zu 100 km/h das schnellste Lauftier Afrikas zu sein! Kein anderes Tier kann ihm die Schlagzeile ablaufen.
+    Der Gepard ist auch ein Meister der Ruhe. Er kann lange Zeit nicht beweglich bleiben und beobachtet seine Umgebung sorgfältig.
+    Wir sind froh, dass wir diesen wunderbaren Geparden treffen durften! Wie wäre es, wenn ihr ihn auf einer weiteren Reise durch die Wildnis begleiten würdet?
+   Benötigte Zeit: 5.892 ms
+
+3. Essenz (Llama 3.1):
+    **Der Gepard ist das schnellste Tier Afrikas und kann bis zu 100 km/h laufen.** Der Gepard ist auch sehr still und beobachtet seine Umgebung sorgfältig. Wir haben den wunderbaren Geparden getroffen!
+   Benötigte Zeit: 623 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    *   **Name:** Gepard
+    *   **Farbe:** Gelb/Schwarz
+    *   **Verhalten:** Ruht/Still
+    *   **Umgebung:** Grasland/Busch
+    *   **Anzahl:** Einzelnes
+    *   **Hintergrund:** Verschwommen/Grün
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.692 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_7.jpg
+  Analyse:
+    ### **Tieranalyse**
+    
+    *   **Name:** Der Name des Tieres ist nicht eindeutig erkennbar. Es könnte sich um eine Art Eule oder um einen anderen Vogel handeln.
+    *   **Farbe:**
+        *   Die vorherrschende Farbe des Tieres ist braun mit weißen Flecken.
+        *   Das Auge ist schwarz und der Schnabel gelb.
+    *   **Verhalten:** Der Vogel scheint ruhig zu sitzen, das Gesicht nach links drehen.
+    *   **Umgebung:**
+        *   In der unmittelbaren Umgebung des Tieres befindet sich ein grünes Blatt, welches auf dem linken Arm des Vögelchen zu sehen ist.
+        *   Im Hintergrund ist eine weiße Wand mit grauen Streifen zu erkennen.
+    *   **Anzahl:** Es gibt nur ein Exemplar eines Vogelchens in diesem Bild zu erkennen.
+    *   **Hintergrund:**
+        *   Der Hintergrund des Bildes ist weiß, mit grau gehaltenen Streifen. Dies könnte eine Wand oder eine andere Außenwand sein.
+    
+    ### **Fazit**
+    
+    Es handelt sich um ein ruhig sitzenden Vogelchen mit braunem Körper und weißen Flecken sowie einem schwarzen Auge und gelbem Schnabel. Es befindet sich in der Nähe einer grünen Pflanze, welche auf seinem linken Arm zu sehen ist. Im Hintergrund befindet sich eine weiße Wand mit grau gehaltenen Streifen.
+  Benötigte Zeit: 12.955 ms
+
+  Gesamte Analysezeit (Llama Vision): 12.955 ms
+
+B. Generierter Text (Deepseek):
+    Hey ihr Kinder! Schaut mal hier! Auf dem Bild ist ein seltsames Tier zu sehen – es könnte eine Eule oder ein anderes Vogelchen sein. Das Tier hat eine braune und weiße Flickentarnung, einen schwarzen Augapfel und einen gelben Schnabel. Es sitzt ruhig da und dreht den Kopf nach links.Auf seinem linken Arm ist noch ein grünes Blatt zu sehen – wie cool! Und im Hintergrund ist eine weiße Wand mit grauen Streifen zu erkennen, was die Szene fast wie einen Indoor-Bereich aussehen lässt. Das Vogelchen sieht friedlich aus und hat bestimmt viele spannende Geschichten zu erzählen. Möchtet ihr wissen, was es sonst noch so treibt? 😊
+   Benötigte Zeit: 12.619 ms
+
+C. Essenz (Deepseek):
+    Das seltsame Tier auf dem Bild hat eine braune und weiße Flickentarnung, einen gelben Schnabel und ein cooleres Blatt auf seinem linken Arm. Es sitzt ruhig da und sieht friedlich aus. Das Tier könnte eine Eule oder ein anderes Vogelchen sein, das viele spannende Geschichten zu erzählen hat!
+   Benötigte Zeit: 5.998 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    - Tier: nicht eindeutig identifiziert  
+    - Farbe: Braun/weiße Flecken  
+    - Verhalten: Still sitzend  
+    - Umgebung: Grünes Blatt auf linker Hand  
+    - Anzahl: Ein Exemplar  
+    - Hintergrund: Weiße Wand mit grauen Streifen
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.419 ms
+
+--- Verwendete Originalbilder ---
+- img_7.jpg

@@ -1,0 +1,91 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_11.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes in Form von Bullet Points:
+    
+    *   **Tier:** Schnee-Eule
+    *   **Farbe:** Weiß, hellgrau
+    *   **Verhalten:** Steht, aufmerksam
+    *   **Umgebung:** Felsige Fläche
+    *   **Anzahl:** Eine
+    *   **Hintergrund:** Wassertöne
+  Benötigte Zeit: 15.874 ms
+
+  Gesamte Analysezeit (Gemma): 15.874 ms
+
+2. Generierter Text (Llama 3.1):
+    Schnee-Eule, die Königin der Nacht!
+    Auf diesem wunderschönen Bild ist eine Schnee-Eule zu sehen. Sie steht still auf einer felsigen Fläche und schaut sich um. Warum ist sie so still? Wahrscheinlich weil sie auf der Jagd nach Mäusen oder anderen kleinen Tieren ist.
+    Was du vielleicht nicht bemerkt hast: Die Schnee-Eule hat eine Weiß- und hellgraue Farbe, die ihr so gut zum felsigen Hintergrund passt. Vielleicht hast du auch schon einmal von einem "Wasserton"-Hintergrund gehört? Das ist ein Begriff aus der Kunst, der bedeutet, dass das Bild so gemalt ist, als ob es sich im Wasser spiegelt. Auf dem Bild sieht es so aus, als wenn die Schnee-Eule in einem See steht!
+    Die Schnee-Eule ist eine sehr seltene Eulenart, aber sie ist so wunderschön und interessant. Sie ist auch sehr still und ruhig, was ihr hilft, ihre Beute zu erwischen. Vielleicht findest du ja ein anderes Bild von einer Schnee-Eule in einem Buch oder im Internet, wenn du noch mehr über diese wunderbare Eulenart erfahren möchtest!
+   Benötigte Zeit: 5.769 ms
+
+3. Essenz (Llama 3.1):
+    Die absolute Kernaussage des Textes ist:
+    "Die Schnee-Eule ist eine seltene und sehr schöne Eulenart, die sich still und ruhig bewegt, um ihre Beute zu erwischen."
+   Benötigte Zeit: 503 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Schnee-Eule
+    *   Farbe: Weiß hellgrau
+    *   Verhalten: Aufmerksam steht
+    *   Umgebung: Felsige Fläche
+    *   Anzahl: Eine
+    *   Hintergrund: Wassertöne
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.655 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_11.jpg
+  Analyse:
+    **Bildanalyse:**
+    
+    * **Tier:** Das Bild zeigt ein Hund.
+    * **Farbe:** Die vorherrschende Farbe des Hundes ist weiß mit bräunlichen Flecken.
+    * **Verhalten:** Der Hund steht auf einem Felsen und blickt nach links, als ob er etwas beobachtet.
+    * **Umgebung:** Der Hund steht auf einem Felsen am Seeufer. Die Umgebung besteht aus Steinen und Gras.
+    * **Anzahl:** Es gibt nur ein Exemplar des Hundes sichtbar.
+    * **Hintergrund:** Im Hintergrund ist ein blauer See zu sehen, der von Bäumen umgeben ist.
+    
+    Der Hund steht auf einem Felsen am Seeufer und blickt nach links. Er hat eine weiße Fellfarbe mit bräunlichen Flecken und steht alleine auf dem Felsen. Die Umgebung besteht aus Steinen und Gras. Im Hintergrund ist ein blauer See zu sehen, der von Bäumen umgeben ist.
+  Benötigte Zeit: 10.357 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.357 ms
+
+B. Generierter Text (Deepseek):
+    Liebe Kinder, 
+    hier ist eine spannende Geschichte über ein Bild, das uns zeigt, was los ist! Auf dem Foto gibt es einen Hund, der ganz allein auf einem Felsen steht. Der Hund hat eine weiße Farbe mit braunen Flecken und sieht aus wie ein harmloser Freund. Er blickt nach links, als ob er etwas Interessantes beobachtet. 
+    Der Hund steht am Seeufer, directly on a rock. Um ihn herum gibt es Steine und Gras, und im Hintergrund ist ein blauer See zu sehen, der von Bäumen umgeben ist. Es sieht so aus, als ob der Hund allein ist, aber das bedeutet nicht, dass er traurig ist – er genießt wahrscheinlich die Natur in Ruhe! 
+    Habt ihr jemals einen Hund am Wasser gesehen? Vielleicht habt ihr auch bemerkt, wie friedlich sie manchmal sein können.
+   Benötigte Zeit: 12.389 ms
+
+C. Essenz (Deepseek):
+    Ein freundlicher Hund steht allein auf einem Felsen am Ufer eines Sees. Er genießt die Ruhe und die Schönheit der Natur um ihn herum.
+   Benötigte Zeit: 5.634 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    - **Tier:** Hund  
+    - **Farbe:** Weiße Fellfarbe mit braunen Flecken  
+    - **Verhalten:** Blick nach links  
+    - **Umgebung:** Felsen am Seeufer  
+    - **Anzahl:** Ein Exemplar  
+    - **Hintergrund:** Blauer See mit Bäumen
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.375 ms
+
+--- Verwendete Originalbilder ---
+- img_11.jpg

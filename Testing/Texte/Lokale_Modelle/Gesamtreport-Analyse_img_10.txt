@@ -1,0 +1,91 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_10.jpg
+  Analyse:
+    Hier ist die Bildanalyse in Bullet Points:
+    
+    * **Tier:** Rotfuchs
+    * **Farbe:** Rotbraun, weiß
+    * **Verhalten:** Sitzt, beobachtet
+    * **Umgebung:** Grasland, sonnig
+    * **Anzahl:** Ein Tier
+    * **Hintergrund:** Verschwommen, Bäume
+  Benötigte Zeit: 17.460 ms
+
+  Gesamte Analysezeit (Gemma): 17.460 ms
+
+2. Generierter Text (Llama 3.1):
+    **Entdecke den Rotfuchs im Sonnenlicht!**
+    Hallo Kinder! Heute werden wir ein wundervolles Tier entdecken. Schaut auf das Bild und sagt mir: "Welches Tier ist da?" Richtig, es handelt sich um einen Rotfuchs!
+    Der Fuchs sitzt sehr still im Grasland und beobachtet seine Umgebung. Sein Fell ist rotbraun mit weißen Flecken, was ihn einzigartig macht. Die Sonne scheint hell in diesem wunderschönen Bild.
+    Im Hintergrund sind einige Bäume zu sehen, die sich sehr vage gegen den Himmel abheben. Der Fotograf hat diese Bilder aufgenommen, um uns einen Eindruck von der Freiheit und Ruhe des Wildes zu geben.
+    Lernen wir etwas über unsere neue Freundin: Rotfüchse sind sehr intelligent und schnell. Sie leben in Graslanden wie diesem und jagen nachts unter der Dunkelheit.
+   Benötigte Zeit: 5.324 ms
+
+3. Essenz (Llama 3.1):
+    **Die Kernaussage für Kinder:** 
+    Rotfüchse sind wundervolle, intelligente Tiere mit einem einzigartigen Fellmuster! 
+    Sie leben in den Grasländern und jagen nachts in die Dunkelheit hinein.
+    Der Fuchs zeigt uns, wie still und ruhig sie sein können.
+   Benötigte Zeit: 725 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    * Tier: Rotfuchs
+    * Farbe: Rotbraun/weiß
+    * Verhalten: Sitzend beobachtend
+    * Umgebung: Grasland/sonnig
+    * Anzahl: Ein Tier
+    * Hintergrund: Verschwommen/Bäume
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 18.158 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_10.jpg
+  Analyse:
+    Es ist ein präzises Bild eines weißen Storchenvogels zu sehen. Der Vogel steht auf der linken Seite des Bildes in einem grünen Bereich und hat einen langen roten Schnabel und Beine.
+    
+    *   **Name:** Weißer Storch
+    *   **Farbe:** Weiße Federn mit schwarzen Flügeln und einem langen, roten Schnabel
+    *   **Verhalten:** Der Vogel steht auf der linken Seite des Bildes und hat seinen Kopf leicht nach vorne geneigt.
+    *   **Umgebung:** Grasland und ein Baum im Hintergrund
+    *   **Anzahl:** Eines Storchenvogels
+    *   **Hintergrund:** Das Bild zeigt einen weißen Storch, der auf einem Grasland steht. Im Hintergrund sieht man einen Baum.
+        *   Ein Weißer Storch steht alleine in einer freien Landschaft und blickt nach vorne.
+  Benötigte Zeit: 12.027 ms
+
+  Gesamte Analysezeit (Llama Vision): 12.027 ms
+
+B. Generierter Text (Deepseek):
+    Schau mal hier! Auf dem Bild ist ein wunderschoner Weißer Storch zu sehen. Er steht allein auf einem grünen Grasland und hat eine weiße Federdecke mit schwarzen Flügeln. Sein Schnabel und seine Beine sind lang und rot, was ihn besonders aussehen lässt. Der Storch hat den Kopf leicht nach vorne geneigt, als ob er nachdenkt oder auf etwas schaut. Im Hintergrund des Bildes ist ein Baum zu sehen, der die Landschaft noch mehr mit Leben füllt. Weißer Storch ist ein selten gesehener Vogel, und es ist toll, ihn in einem natürlichen Habitat wie diesem zu bewundern!
+   Benötigte Zeit: 11.428 ms
+
+C. Essenz (Deepseek):
+    Der Text beschreibt einen seltenen Weißen Storch, der mit seinem weißen Federkleid und rotem Schnabel auffällt, und erklärt, warum es toll ist, ihn im Naturschutzgebiet zu sehen.
+   Benötigte Zeit: 3.710 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - **Tier:** Weißer Storch  
+    - **Farbe:** Weiße, Schwarze, Rote  
+    - **Anzahl:** Einer  
+    - **Verhalten:** Steht, Kopf vorn geneigt  
+    - **Umgebung:** Grasland, Baum im Hintergrund  
+    - **Hintergrund:** Freie Landschaft
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.417 ms
+
+--- Verwendete Originalbilder ---
+- img_10.jpg

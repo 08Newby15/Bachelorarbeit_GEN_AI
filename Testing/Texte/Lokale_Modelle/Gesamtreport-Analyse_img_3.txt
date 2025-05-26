@@ -1,0 +1,87 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_3.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes, die Ihren Kriterien entspricht:
+    
+    *   **Name:** Küken
+    *   **Farbe:** Gelb, braun
+    *   **Verhalten:** Schwimmen, Plaudern
+    *   **Umgebung:** Wasserfläche
+    *   **Anzahl:** Drei
+    *   **Hintergrund:** Grün, verschwommen
+  Benötigte Zeit: 14.170 ms
+
+  Gesamte Analysezeit (Gemma): 14.170 ms
+
+2. Generierter Text (Llama 3.1):
+    Küken im Wasser! Ein wunderschönes Bild!
+    Schau, da sind drei junge Küken in der Wasserfläche und spielen miteinander. Sie schwimmen umher und plaudern leise miteinander. Die Küken sind gelb und braun gefärbt, genau wie die Eier, aus denen sie gekrochen sind.
+    Das Wasser ist klar und grün, weil es von Algen freigewaschen wurde. Im Hintergrund ist ein kleiner Baum zu erkennen, der sich leicht im Wasser spiegelt. Die Küken mögen das Schwimmen so sehr, dass sie immer wieder nach hinten fallen, aber sofort wieder hoch schwimmen.
+    Ein bisschen einsam mag es ihnen auch sein in dem großen Wasserloch, aber die Küken sind nicht allein. Wenn du genau hinsiehst, kannst du sogar ein anderes kleines Tier im Gras unter den Büschen erkennen. Das könnte vielleicht ein Vögelchen sein, das auf der Suche nach Nahrung ist oder einfach nur beobachtet.
+    Die Küken haben noch viel zu lernen und müssen sich an die Welt draußen gewöhnen. Aber jetzt genießen sie einfach nur den Tag und spielen und schwimmen in dem warmen Wasser. Wir können lernen, dass auch wir allezeit im Mittelpunkt stehen können wenn wir einfach spielen, uns umumwirbelt und anderen helfen.
+   Benötigte Zeit: 6.038 ms
+
+3. Essenz (Llama 3.1):
+    Ein Text, der die Welt der Küken aufregend beschreibt! Aber was ist das Wichtigste, was du über dieses Bild wissen solltest?
+    Küken mögen Wasser! Sie schwimmen umher, lernen zu spielen und genießen einfach nur den Tag. Wenn wir ihnen zusehen, können wir auch lernen, wie wichtig es ist, zu spielen, sich umumwirbelt zu lassen und anderen zu helfen.
+   Benötigte Zeit: 908 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   **Name:** Küken
+    *   **Farbe:** Gelb, Braun
+    *   **Verhalten:** Schwimmen, Plaudern
+    *   **Umgebung:** Wasserfläche
+    *   **Anzahl:** Drei
+    *   **Hintergrund:** Grün, Verschwommen
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.926 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_3.jpg
+  Analyse:
+    Bildanalyse:
+    
+    * **Tier:** Krokodil
+    * **Farben:** Braun, Gelb, Schwarz
+    * **Verhalten:** Auf einer Wiese liegt und blickt in den Himmel
+    * **Umgebung:** Grasland mit einigen Bäumen im Hintergrund, sonnig
+    * **Anzahl:** 1 Krokodil
+    * **Hintergrund:** Sonnige Landschaft mit blauen Wolken am Horizont
+  Benötigte Zeit: 8.593 ms
+
+  Gesamte Analysezeit (Llama Vision): 8.593 ms
+
+B. Generierter Text (Deepseek):
+    Hallo ihr Lieben! Schaut mal auf diesem Bild: Da liegt ein Krokodil auf der Wiese und blickt in den Himmel. Es hat Braun-, Gelb- und Schwarze Flecken am Körper, was es besonders macht. Die Umgebung ist eine sonnige Graslandschaft mit Bäumen im Hintergrund. Der Himmel ist blau mit weißen Wolken – ein wunderschöner Tag für das Krokodil, das entspannt dalagert. Man könnte meinen, dass das Tier vielleicht die Sonne genießt oder einfach nur relaxt. Findet ihr nicht auch, dass diese Szene friedlich und lebendig ist?
+   Benötigte Zeit: 12.588 ms
+
+C. Essenz (Deepseek):
+    Das Bild zeigt ein Krokodil mit bunten Flecken auf der Wiese. Der Himmel ist blau und sonnig, mit weißen Wolken und Bäumen im Hintergrund. Die Szene wirkt friedlich und lebendig.
+   Benötigte Zeit: 6.614 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    - Tier: Krokodil  
+    - Farben: Braun Gelb Schwarz  
+    - Verhalten: Liegt Wiese Himmel  
+    - Umgebung: Grasland Bäume Sonnig  
+    - Anzahl: 1 Krokodil  
+    - Hintergrund: Landschaft Wolken
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.560 ms
+
+--- Verwendete Originalbilder ---
+- img_3.jpg

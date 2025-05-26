@@ -1,0 +1,86 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_16.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes:
+    
+    *   **Tier:** Schmetterling
+    *   **Farbe:** Orange, Schwarz
+    *   **Verhalten:** Sitzt, ruht
+    *   **Umgebung:** Blätter, Grün
+    *   **Anzahl:** Ein Exemplar
+    *   **Hintergrund:** Verschwommen, Grün
+  Benötigte Zeit: 14.242 ms
+
+  Gesamte Analysezeit (Gemma): 14.242 ms
+
+2. Generierter Text (Llama 3.1):
+    Ein zauberhafter Schmetterling! Er ist ein wunderschönes Tier mit einem leuchtenden orangefarbenen und schwarzem Farbspiel. Wenn du ihn ansiehst, wird er dir freundlich zuwinken und sich auf einer Blättergruppe niederlassen.
+    Diese grünen Blätter sind sein Zuhause, und er ruht sich gerne in der Nähe aus. Sein Flug ist ein wunderschönes Schauspiel, aber jetzt genießt er einfach nur die Ruhe um sich herum. Im Hintergrund ist der Himmel leicht verschwommen, aber du kannst immer noch seine grüne Farbe erkennen.
+    Dieser Einzelschmetterling hat seinen eigenen Weg und genießt den Moment hier in seinem grünen Paradies.
+   Benötigte Zeit: 4.906 ms
+
+3. Essenz (Llama 3.1):
+    Ein zauberhafter Schmetterling ist ein wunderschönes Tier. Es sitzt gerne auf Blättern, um sich zu erholen. Der Schmetterling genießt seine Ruhe und seinen Moment in seinem grünen Zuhause.
+   Benötigte Zeit: 575 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Schmetterling
+    *   Farbe: Orange/Schwarz
+    *   Anzahl: Ein Exemplar
+    *   Verhalten: Sitzt/ruht
+    *   Umgebung: Blätter/Grün
+    *   Hintergrund: Verschwommen/Grün
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.479 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_16.jpg
+  Analyse:
+    * Das Bild zeigt ein Tier oder eine Pflanze: Es handelt sich um ein Schaf
+    * Farbe: Das Schaf ist weiß
+    * Verhalten: das Schaf schläft im Gras
+    * Umgebung: Das Schaf liegt im Gras eines Feldes
+    * Anzahl: es gibt nur 1 Schaf zu sehen
+    * Hintergrund: Das Bild zeigt ein Feld mit Gras, in der Ferne sind einige Bäume sichtbar
+  Benötigte Zeit: 8.793 ms
+
+  Gesamte Analysezeit (Llama Vision): 8.793 ms
+
+B. Generierter Text (Deepseek):
+    **Ein schläferischer Schafsblick**  
+    Hey Kleine! Schaut mal auf dem Bild: Da ist ein schulterlanger, weißer Hund? Kein Hund, sondern ein Schaf! Das weiße Schaf liegt im Gras und schlummert. Es ist allein in einem weiten Feld mit grüner Wiese und ein paar Bäumen in der Ferne. Warum schläft das Schaf auf dem Feld? Vielleicht because es warm und sicher ist hier, oder weil es einfach müd war! Wusstet ihr, dass Schafe lieben es, im Gras zu knabbern und sich im Sonnenschein auszuruhen? Das ist bestimmt ein friedlicher Tag für das Schaf. Möchtet ihr auch mal so entspannt auf einem Feld liegen?
+   Benötigte Zeit: 12.236 ms
+
+C. Essenz (Deepseek):
+    **Kernaussage:**  
+    Ein weißes Schaf liegt friedlich im Gras und schläft. Es ist warm und sicher oder einfach müd. Schafe lieben es, im Gras zu knabbern und sich im Sonnenschein auszuruhen.
+   Benötigte Zeit: 4.328 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **
+    
+    - Tier: Sheep  
+    - Farbe: White  
+    - Verhalten: Schlafen  
+    - Umgebung: Meadow Field  
+    - Anzahl: 1  
+    - Hintergrund: Field Trees
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 15.915 ms
+
+--- Verwendete Originalbilder ---
+- img_16.jpg

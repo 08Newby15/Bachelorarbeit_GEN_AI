@@ -1,0 +1,91 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_15.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes in Bullet Points:
+    
+    * **Tier:** Eisbär.
+    * **Farbe:** Weiß, schwarz.
+    * **Verhalten:** Ruht auf Eis.
+    * **Umgebung:** Schnee, Eis.
+    * **Anzahl:** Ein Tier.
+    * **Hintergrund:** Blauer Himmel.
+  Benötigte Zeit: 14.440 ms
+
+  Gesamte Analysezeit (Gemma): 14.440 ms
+
+2. Generierter Text (Llama 3.1):
+    **Eisbär im Winterwunderland**
+    Schau dir das Bild an! Hier ist ein wunderschöner Eisbär. Er ist weiß und schwarz und ruht sich aus auf dem weichen Schnee und dem glatten Eisschild.
+    Der Eisbär ist ein Tier, das in den kalten Regionen der Welt lebt. Es hat eine besondere Fellfarbe, die es warm hält und es vor dem kalten Wind schützt. Wenn du genau hinschaust, kannst du erkennen, dass sein Fell nicht nur weiß ist, sondern auch einige dunkle Partien.
+    Im Hintergrund des Bildes kannst du den blauen Himmel sehen. Es ist ein wunderschöner Tag für einen Eisbär wie diesem! Der Schnee und das Eis bieten ihm eine sichere Erholungsmöglichkeit. Einzigartig an diesem Bild ist, dass der Eisbär ganz allein in dieser winterlichen Landschaft liegt. Keine Spur von anderen Tieren oder Menschen im Umfeld.
+    Das Bild zeigt uns eindrucksvoll die Winterwelt und ihre Schönheit. Es ist ein Moment des Friedens und der Ruhe.
+   Benötigte Zeit: 5.541 ms
+
+3. Essenz (Llama 3.1):
+    **Hier ist die Kernaussage:**
+    In den kalten Regionen der Welt lebt ein wunderschöner Eisbär, der sich mit seinem besonderen Fell warm hält und im Schnee und auf dem Eis ruht. Der Eisbär zeigt uns die winterliche Landschaft in ihrer Ruhe und Schönheit.
+    Ich habe mich sorgfältig auf das Wesentliche konzentriert, um eine klare und leserfreundliche Antwort zu liefern. Ich bin stolz darauf!
+   Benötigte Zeit: 1.024 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    - Tier: Eisbär
+    - Farbe: Weiß-Schwarz
+    - Verhalten: Ruht
+    - Umgebung: Schnee-Eis
+    - Anzahl: Ein
+    - Hintergrund: Blauer Himmel
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.516 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_15.jpg
+  Analyse:
+    **Bildanalyse**
+    
+    * **Tier:** Seelöwe
+    * **Farbe:** Grau/Weiß mit schwarzen Streifen
+    * **Verhalten:** Der Seelöwe liegt auf einem Felsen und schaut nach links.
+    * **Umgebung:** Der Hintergrund ist blau, es gibt Wassertropfen am Rand des Bildes.
+    * **Anzahl:** Es gibt 1 Seelöwen im Bild.
+    * **Hintergrund:** Blauer Himmel mit weißen Wolken.
+    
+    Dieser Bullet-Point-Stil ermöglicht die schnelle und präzise Darstellung der relevanten Informationen zu einem Bild.
+  Benötigte Zeit: 9.023 ms
+
+  Gesamte Analysezeit (Llama Vision): 9.023 ms
+
+B. Generierter Text (Deepseek):
+    Hey Kids! Schaut mal hier: Auf einem Felsen liegt ein Seelöwe, der euch mit seinem Blick nach links ans Meer verweist. Er ist grau oder weiß mit schwarzen Streifen – was echt cool aussieht! Der Hintergrund ist blau, als wäre das Meer um ihn herum, und es gibt sogar kleine Wassertropfen, die von den Wellen stammen könnten. Oben tragt weiße Wolken einen klaren blauen Himmel. Es ist ein friedlicher Platz, an dem der Seelöwe scheinbar in Ruhe dalagert. Findet ihr das nicht spannend?
+   Benötigte Zeit: 13.555 ms
+
+C. Essenz (Deepseek):
+    **Kernaussage:**  
+    Ein Seelöwe liegt friedlich auf einem Felsen am Meer und blickt nach links, während der Himmel blau ist und weiße Wolken tragen. Der Seelöwe hat graue oder weiße Farbe mit schwarzen Streifen und der Platz um ihn herum sieht sehr ruhig und schön aus.
+   Benötigte Zeit: 4.513 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - **Tier:** Seelöwe  
+    - **Farbe:** Grau/Weiße Striche  
+    - **Verhalten:** Liegt und schaut nach links  
+    - **Umgebung:** Fels u. Wasser tropfen  
+    - **Anzahl:** 1 Seelöwe  
+    - **Hintergrund:** Blauer Himmel, weiße Wolken
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.008 ms
+
+--- Verwendete Originalbilder ---
+- img_15.jpg

@@ -1,0 +1,39 @@
+Rolle 1 – Bildanalyse (Experte):
+
+Name: Braunfarbiges Pferd
+
+Farbe: Braun, Mähne blond
+
+Verhalten: Frisst Gras
+
+Umgebung: Grüne Wiese
+
+Anzahl: Ein Pferd sichtbar
+
+Hintergrund: Bäume, zweites Pferd
+
+Rolle 2 – Kindgerechter Text (Autor):
+
+Schau mal, hier siehst du ein wunderschönes braunes Pferd mit einer hellen Mähne! Es steht auf einer saftig grünen Wiese und knabbert genüsslich am frischen Gras. Pferde lieben es, draußen zu sein und sich frei zu bewegen. Dieses hier scheint sich richtig wohlzufühlen. Im Hintergrund kannst du noch ein zweites Pferd erkennen, das sich ein wenig versteckt hat. Umgeben ist die Wiese von vielen Bäumen – perfekt für ein gemütliches Pferdeleben! Wusstest du, dass Pferde den ganzen Tag mit Fressen verbringen können? Spannend, oder?
+
+Rolle 3 – Kernaussage (Kurztext für Kinder):
+
+Ein braunes Pferd frisst Gras.
+Es steht auf einer grünen Wiese.
+Im Hintergrund ist noch ein Pferd.
+
+Rolle 4 – Stichpunktliste (Analyse der Kernaussage):
+
+Zusammenfassung:
+
+Tier: Pferd
+
+Farbe: Braun, blond
+
+Anzahl: Zwei Pferde
+
+Verhalten: Gras fressen
+
+Umgebung: Grüne Wiese
+
+Hintergrund: Bäume, Pferd

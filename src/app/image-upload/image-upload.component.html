@@ -1,0 +1,14 @@
+<div
+    class="drop-zone"
+    (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave($event)"
+    (drop)="onDrop($event)"
+    [class.drag-over]="isDraggingOver">
+    <p>Ziehe bis zu 5 Bilder hierher.</p>
+    <div *ngIf="imageFiles.length > 0">
+        <h4>Hochgeladene Bilder:</h4>
+        <ul>
+            <li *ngFor="let file of imageFiles">{{ file.name }}</li>
+        </ul>
+    </div>
+</div>

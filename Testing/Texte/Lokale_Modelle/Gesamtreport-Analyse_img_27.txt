@@ -1,0 +1,101 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_27.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes, basierend auf den vorgegebenen Kriterien:
+    
+    *   **Tier:** Eisbär
+    *   **Farbe:** Weiß, Schwarz
+    *   **Verhalten:** Schläft/Ruht
+    *   **Umgebung:** Schnee, Eis
+    *   **Anzahl:** Ein
+    *   **Hintergrund:** Verschneit, verschwommen
+  Benötigte Zeit: 15.947 ms
+
+  Gesamte Analysezeit (Gemma): 15.947 ms
+
+2. Generierter Text (Llama 3.1):
+    **Die Winterwelt des Eisbären**
+    Hey da draußen! Hast du schon einmal einen Eisbär im wahren winterlichen Glanz gesehen? Wir haben ein faszinierendes Bild vor uns!
+    Auf dem Bild ist genau einer dieser majestätischen Tiere zu sehen. Er liegt friedlich auf der Seite, die Pfoten angezogen und den Kopf in Richtung seines Rückens gedreht. Der Eisbär trägt seine typische weiß-schwarze Fellfarbe, die ihn perfekt für sein winterliches Umfeld einpasst.
+    Im Hintergrund ist es fast unmöglich zu erkennen, aber wir können vermuten, dass sich das Bild in einer verschneiten und verschwommenen Landschaft befindet. Der Schnee bedeckt alles unter seinen weichen, weißen Flocken. Wir wissen nicht genau, wo wir uns befinden, aber es sieht sicherlich nach einem winterlichen Paradies aus.
+    Im Vordergrund liegt der Eisbär auf dem Eiskern und trägt seine Ruhepflege für den Tag. Es ist ein perfektes Bild von dieser wunderbaren Kreatur in ihrer Winterwelt.
+   Benötigte Zeit: 5.520 ms
+
+3. Essenz (Llama 3.1):
+    Das ist eine schöne Aufgabe!
+    Hier sind die drei wichtigsten Punkte des Textes für Kinder:
+    *   Ein Eisbär liegt friedlich auf dem Eiskern und trägt seine Ruhepflege.
+    *   Der Eisbär hat eine weiße und schwarze Fellfarbe, die ihn für den winterlichen Schnee einpasst.
+    *   Die Szene zeigt das winterliche Paradies des Eisbären in einer verschneiten Landschaft.
+    Ich hoffe, das ist genau das, was du gesucht hast!
+   Benötigte Zeit: 1.027 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Eisbär
+    *   Farbe: Weiß, Schwarz
+    *   Verhalten: Schlafen
+    *   Umgebung: Schnee, Eis
+    *   Anzahl: Ein
+    *   Hintergrund: Verschneit
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.116 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_27.jpg
+  Analyse:
+    Nun zum Analyse-Bericht:
+    
+    ### * Das Bild zeigt eine Blume. 
+    * Name: Es ist eine Weiß-Blumenartige Pflanze mit doppelt gefiederten Laubblättern, deren Hauptsymptomatologie der Königsklee (Trifolium pratense) entspricht.
+    * Farbe: Die Blüten sind weiß oder leicht gelblich.
+    
+    ### * Verhalten:
+    Die Pflanze ist in voller Blüte. 
+    
+    ### * Umgebung:
+    Das Bild zeigt eine wunderschöne Landschaft, die von einer Weiß-Blumenartigen Pflanze dominiert wird.
+    * Anzahl: Mehrere Weiß-Blumenartige Pflanzen sind zu sehen, die sich in voller Blüte befinden. 
+    * Hintergrund:
+    Im Hintergrund ist eine wunderschöne Landschaft mit einer offenen Wiese und einem blauen Himmel zu erkennen.
+    
+    Dieses Bild ist ein perfektes Beispiel dafür, wie man schöne Bilder erstellt, ohne dass es etwas anderes als die Natur zu zeigen gibt.
+  Benötigte Zeit: 10.402 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.402 ms
+
+B. Generierter Text (Deepseek):
+    Hey ihr Lieben! Schaut euch diese wunderschönen Blumen an – es sind Kleeblumen, genannt Königsklee. Sie haben niedliche Blüten, die meist weiß oder leicht gelblich sind und in vollem Blüte stehen. Jede Pflanze hat doppelzahnige Laubblätter, was sie besonders macht.
+    Im Bild seht ihr viele dieser Kleeblumen auf einem Feld, umgeben von weiten grünen Wiesen und einem blauen Himmel. Es ist eine natürliche Schönheit pur! Könnt ihr euch vorstellen, wie es wäre, in solch einem schönen Fleckchen Natur zu sein?
+   Benötigte Zeit: 12.381 ms
+
+C. Essenz (Deepseek):
+    Die Kleeblumen heißen Königsklee und haben niedliche weiße oder gelbe Blüten mit doppelzahnigen Blättern. Sie wachsen in einem Feld mit grünen Wiesen und blauem Himmel, was ein schönes Naturereignis ist.
+   Benötigte Zeit: 5.903 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    - **Plant Type**: Weißblumenartige Pflanze  
+    - **Flower Color**: Weiß/gelblich  
+    - **Leaf Type**: Doppelt gefiedert  
+    - **Behavior**: Vollständig in Blüte  
+    - **Landscape Type**: pastorales Bild  
+    - **Anzahl**: Mehrere Pflanzen  
+    - **Hintergrund**: Wiese, blauer Himmel
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.232 ms
+
+--- Verwendete Originalbilder ---
+- img_27.jpg

@@ -1,0 +1,21 @@
+Rolle 1:
+* Name: Erdmännchen (Meerkat)
+* Farbe: Hellbraun, dunkel
+* Verhalten: Sitzt, schaut aufmerksam
+* Umgebung: Baumstamm, Rinde
+* Anzahl: Ein Exemplar
+* Hintergrund: Grün, unscharf
+
+Rolle 2:
+Hallo liebe Kinder! Schaut mal, was wir hier haben! Das ist ein kleines Erdmännchen, das neugierig in die Welt blickt. Es hat hellbraunes Fell mit dunklen Stellen und sitzt ganz aufmerksam auf einem dicken Baumstamm. Man kann richtig die raue Rinde des Baumes erkennen. Im Hintergrund ist alles ganz grün und ein bisschen verschwommen, wie in einem Wald oder Park. Dieses einzelne Erdmännchen scheint gerade Wache zu halten oder etwas Spannendes entdeckt zu haben. Ist es nicht süß, wie es da sitzt und uns anschaut?
+
+Rolle 3:
+Schau mal, ein wachsames Erdmännchen sitzt auf einem Baumstamm. Es hat hellbraunes Fell und blickt neugierig umher. Die grüne Umgebung im Hintergrund lässt es wie einen kleinen Entdecker aussehen.
+
+Rolle 4: Zusammenfassung:
+* Tier: Erdmännchen
+* Farbe: Hellbraun, dunkel
+* Anzahl: Ein Exemplar
+* Verhalten: Sitzt aufmerksam
+* Umgebung: Baumstamm, Rinde
+* Hintergrund: Grün, unscharf

@@ -1,0 +1,98 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_20.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes in Form von Bullet Points:
+    
+    *   **Tier:** Kaiserpinguin
+    *   **Farbe:** Schwarz-weiss
+    *   **Verhalten:** Aufrecht stehen
+    *   **Umgebung:** Eisfläche
+    *   **Anzahl:** Zwei
+    *   **Hintergrund:** Verschneite Landschaft
+  Benötigte Zeit: 13.724 ms
+
+  Gesamte Analysezeit (Gemma): 13.724 ms
+
+2. Generierter Text (Llama 3.1):
+    **Entdecke die einzigartige Welt der Kaiserpinguine!**
+    Hallo Kinder!
+    Heute möchten wir euch auf eine spannende Reise mitnehmen, in eine kälteste Welt, wo Eis und Schnee überall sind. Einführen wir euch in das Reich der Kaiserpinguine!
+    Betrachtet diese wunderschöne Bilder, die uns zwei majestätische Kaiserpinguine präsentieren. Sieht ihr ihre glänzende schwarze und weiße Fellfärbung? Dies ist ein wichtiger Schutz vor dem kalten Klima.
+    Was sind das für merkwürdige Wesen mit ihren langen Beinen? Warum stehen sie so aufrecht da? Die Kaiserpinguine können sogar laufen, wenn nötig!
+    Beachten Sie die umliegende Landschaft. Wo sind wir genau? Wir befinden uns in einer verschneiten Welt, wo das Eis überall präsent ist.
+    Das Leben der Kaiserpinguine zeigt uns ihre anpassungsfähigen Wesenheit. Jeder lebt auf eigene Art und Weise, aber sie beweisen alle ihre Stärke und Fähigkeit, sich an diese harten Bedingungen anzupassen.
+    Kannst du dir vorstellen, wie es ist, ein Kaiserpinguin zu sein? Was würdest du tun, um dich in dieser kalten Welt wohlfühlen?
+    Wir hoffen, dass euch unsere Reise mit den Kaiserpinguinen gefallen hat. Bleibt gesund und weiterhin kreativ!
+   Benötigte Zeit: 6.190 ms
+
+3. Essenz (Llama 3.1):
+    **Die Kernaussage:**
+       Die Kaiserpinguine sind faszinierende Tiere, die sich in der kalten Arktiszone bewohnen und eine einzigartige Anpassungsfähigkeit an diese harten Bedingungen zeigen. Sie haben eine besondere Fellfärbung als Schutz vor dem Eis und können sogar laufen, wenn nötig. Die Kaiserpinguine sind ein wunderbares Beispiel für die Vielfalt und den Stolz der Tierwelt.
+    *   **Einfachheit**: 
+    *   **Klare Sprache:** Ja
+    *   **Lesbarkeit:** Ja
+    *   **Faktische Korrektheit:** Ja
+    *   **Vollständigkeit:** Ja
+   Benötigte Zeit: 1.457 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Kaiserpinguin
+    *   Farbe: Schwarz-weiss
+    *   Verhalten: Aufrecht stehen
+    *   Umgebung: Eisfläche
+    *   Anzahl: Zwei
+    *   Hintergrund: Verschneite Landschaft
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.646 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_20.jpg
+  Analyse:
+    Hier sind meine Ergebnisse. Vielen Dank für das Bild.
+    
+    *   **Tier:** pinguin
+    *   **Farbe:** weiß schwarz grau
+    *   **Verhalten:** fliegt
+    *   **Umgebung:** Eisberge, Südpolare Regionen
+    *   **Anzahl:** mehrere
+    *   **Hintergrund:** blauweißer Himmel
+  Benötigte Zeit: 8.286 ms
+
+  Gesamte Analysezeit (Llama Vision): 8.286 ms
+
+B. Generierter Text (Deepseek):
+    **Pinguine im Südpolargebiet**  
+    Hey ihr da! Schaut mal diese Bilder von Pinguinen an. Sie sind weiß, schwarz und grau und fliegen elegant durch die Luft. Die Pinguine leben in der Südpolarität, wo es Eisberge und einen blauweißen Himmel gibt. Mehrere Pinguine sind auf den Bildern zu sehen – sie sind wahrscheinlich zusammen, weil sie gern als Gruppe leben. Das ist supercool!
+   Benötigte Zeit: 11.063 ms
+
+C. Essenz (Deepseek):
+    **Penguins are cool birds that live in the Southern Hemisphere and love hanging out together in big groups.**
+   Benötigte Zeit: 6.557 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - **Tier:** Pinguin  
+    - **Farbe:** weiß-schwarz-grau  
+    - **Verhalten:** fliegt  
+    - **Umgebung:** Eisberge, Südpolar  
+    - **Anzahl:** mehrere  
+    - **Hintergrund:** blauweißer Himmel
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.204 ms
+
+--- Verwendete Originalbilder ---
+- img_20.jpg

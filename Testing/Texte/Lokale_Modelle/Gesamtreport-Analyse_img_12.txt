@@ -1,0 +1,85 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_12.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes in Form von Bullet Points:
+    
+    *   **Name:** Irische Wolfsspinnke.
+    *   **Farbe:** Schwarz-weiß.
+    *   **Verhalten:** Sitzt aufmerksam.
+    *   **Umgebung:** Grasland.
+    *   **Anzahl:** Ein Exemplar.
+    *   **Hintergrund:** Berglandschaft.
+  Benötigte Zeit: 15.975 ms
+
+  Gesamte Analysezeit (Gemma): 15.975 ms
+
+2. Generierter Text (Llama 3.1):
+    Ich kann keine Anfragen zum Thema "Wolfsspinnke" beantworten, da sie nicht existiert. Wenn Sie Informationen zu einer anderen Art oder einem anderen Thema benötigen, stehe ich Ihnen gerne zur Verfügung.
+   Benötigte Zeit: 3.810 ms
+
+3. Essenz (Llama 3.1):
+    Das ist ein kniffliger Text! Hier ist die Kernaussage für Kinder in drei kurzen Sätzen:
+    * "Wolfsspinnke" ist kein real existierendes Tier.
+    * Es gibt keine Informationen über ein solches Tier, weil es nicht existiert.
+    * Wenn du nach Infos zu einem anderen Tier oder Thema suchst, stehe ich dir gerne zur Verfügung!
+   Benötigte Zeit: 737 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Irische Wolfsspinnke
+    *   Farbe: Schwarz-weiß
+    *   Anzahl: Ein Exemplar
+    *   Verhalten: Sitzt aufmerksam
+    *   Umgebung: Grasland
+    *   Hintergrund: Berglandschaft
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.743 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_12.jpg
+  Analyse:
+    *   **Name**: Das Bild zeigt eine Berner Alpenniederungshund (Berner Sennenhund).
+    *   **Farbe**: Die vorherrschende Farbe des Tieres ist schwarz mit weißem Bauch und roten Augen, Ohren und Hinterpfoten.
+    *   **Verhalten**: Das Tier steht aufrecht und blickt direkt in die Kamera. Sein Maul ist geöffnet und seine Zunge hängt heraus.
+    *   **Umgebung**: Das Tier steht auf einem Rasen mit einigen Blumen. Der Boden ist überwiegend grün, aber es gibt auch gelbe und blaue Blüten zu sehen.
+    *   **Anzahl**: Es zeigt nur ein einzelnes Tier.
+    *   **Hintergrund**: Der Hintergrund des Bildes ist blau und sieht aus wie der Himmel. Es gibt keine sichtbaren Wolken oder andere Objekte im Hintergrund.
+  Benötigte Zeit: 10.395 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.395 ms
+
+B. Generierter Text (Deepseek):
+    Hallo Kinder! Schaut euch einmal diesen wunderschönen Hund an! Es handelt sich um eine Berner Alpenniederungshund, auch bekannt als Berner Sennenhund. Sein Fell ist schwarz, mit einem weißen Bauch und roten Augen, Ohren und Hinterpfoten – ein echt auffälliges Tier! Der Hund steht aufrecht und blickt direkt in die Kamera. Er hat das Maul offen und seine Zunge hängt heraus, als würde er lächeln. 
+    Um ihn herum wächst grünes Gras mit gelben und blauen Blumen. Der Hintergrund ist ein strahlender blauer Himmel ohne Wolken. Es sieht so aus, als würde der Hund gerade fröhlich in die Weite blicken. Findet ihr nicht auch, dass dieser Hund toll aussieht? Er ist wirklich ein besonderes Tier!
+   Benötigte Zeit: 14.273 ms
+
+C. Essenz (Deepseek):
+    Hallo! Das Allerwichtigste ist: Es handelt sich um einen **Berner Sennenhund**, der mit seinem schwarzen, weißen und roten Fell auffällig aussieht. Der Hund steht fröhlich und blickt mit offenem Maul in die Kamera, als würde er lächeln. Um ihn herum wachsen grünes Gras, gelbe und blaue Blumen unter einem strahlenden blauen Himmel.
+   Benötigte Zeit: 4.918 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - Tier: Berner Mountain Dog  
+    - Farbe: Schwarz, weiß, rot  
+    - Anzahl: Einzelnes Tier  
+    - Verhalten: Steht aufrecht, blickt direkt, Maul offen, Zunge hängt  
+    - Umgebung: Gras, Blumen  
+    - Hintergrund: Klarer blauer Himmel
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.587 ms
+
+--- Verwendete Originalbilder ---
+- img_12.jpg

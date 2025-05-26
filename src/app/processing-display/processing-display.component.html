@@ -1,0 +1,378 @@
+<div *ngIf="originalData || comparisonData" class="results-container-wrapper">
+  <div style="display: flex; flex-wrap: wrap; gap: 20px">
+    <div
+      *ngIf="originalData"
+      class="pipeline-column"
+      style="
+        flex: 1;
+        min-width: 300px;
+        border: 1px solid #eee;
+        padding: 15px;
+        border-radius: 8px;
+      "
+    >
+      <h2>Ergebnisse (Kombination 1: Gemma, Llama 3.1, Flux)</h2>
+
+      <h3>1. Bildanalysen (Gemma)</h3>
+
+      <ul *ngIf="originalData.gemmaSummaries?.length">
+        <li
+          *ngFor="let item of originalData.gemmaSummaries"
+          style="margin-left: 2rem; margin-bottom: 5px"
+        >
+          <strong>{{ item.file.name }}:</strong>
+          <markdown [data]="item.summary" class="markdown-output"></markdown>
+        </li>
+      </ul>
+      <p
+        *ngIf="
+          !originalData.gemmaSummaries ||
+          originalData.gemmaSummaries.length === 0
+        "
+        style="margin-left: 2rem"
+      >
+        Keine Gemma-Analysen.
+      </p>
+      <table class="timing-table" *ngIf="originalData.gemmaSummaries?.length">
+        <caption>
+          Analysezeiten (Gemma)
+        </caption>
+        <tbody>
+          <tr *ngFor="let item of originalData.gemmaSummaries">
+            <td>{{ item.file.name }}</td>
+            <td>{{ item.analysisTime | number : "1.0-0" }} ms</td>
+          </tr>
+          <tr *ngIf="originalData.gemmaTotalAnalysisTime !== undefined">
+            <td><strong>Gesamt (Gemma Analyse)</strong></td>
+            <td>
+              <strong
+                >{{
+                  originalData.gemmaTotalAnalysisTime | number : "1.0-0"
+                }}
+                ms</strong
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. Generierter Text (Llama 3.1)</h3>
+      <markdown
+        [data]="
+          originalData.llama31GeneratedText ||
+          'Kein Text generiert (Llama 3.1).'
+        "
+        class="markdown-output"
+      ></markdown>
+      <p
+        class="timing-info"
+        *ngIf="originalData.llama31GeneratedTextTime !== undefined"
+      >
+        Benötigte Zeit:
+        {{ originalData.llama31GeneratedTextTime | number : "1.0-0" }} ms
+      </p>
+
+      <h3>3. Essenz (Llama 3.1)</h3>
+      <markdown
+        [data]="
+          originalData.llama31Essence || 'Keine Essenz extrahiert (Llama 3.1).'
+        "
+        class="markdown-output"
+      ></markdown>
+      <p
+        class="timing-info"
+        *ngIf="originalData.llama31EssenceTime !== undefined"
+      >
+        Benötigte Zeit:
+        {{ originalData.llama31EssenceTime | number : "1.0-0" }} ms
+      </p>
+
+      <h3>4. Gemeinschaftsbild und Originalbilder (Kombination 1)</h3>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-left: 2rem;
+        "
+      >
+        <div
+          class="keyword-section"
+          style="margin-left: 5rem; margin-bottom: 15px"
+        >
+          <p><strong>Verwendete Keywords für Flux (Llama 3.1):</strong></p>
+          <pre class="code-block">{{
+            originalData.fluxPromptKeywords || "(Keine Keywords generiert)"
+          }}</pre>
+        </div>
+        <div style="flex: 0 0 58%; min-width: 200px; margin-right: 2%">
+          <p><strong>Originalbilder</strong></p>
+          <div style="display: flex; flex-wrap: wrap">
+            <div
+              *ngFor="let imageUrl of originalImageUrls; let i = index"
+              style="width: calc(50% - 10px); margin: 5px"
+            >
+              <img
+                [src]="imageUrl"
+                [alt]="
+                  (originalData.inputImages &&
+                    originalData.inputImages[i].name) ||
+                  'Originalbild ' + (i + 1)
+                "
+                style="
+                  height: 10rem;
+                  width: auto;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <div style="flex: 0 0 38%; min-width: 150px">
+          <p><strong>Gemeinschaftsbild (Flux)</strong></p>
+          <img
+            *ngIf="
+              originalData.fluxCommunityImage &&
+              !originalData.fluxCommunityImage.startsWith('Fehler bei')
+            "
+            [src]="originalData.fluxCommunityImage"
+            alt="Generiertes Bild (Kombi 1)"
+            style="
+              width: 100%;
+              height: auto;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 1rem;
+            "
+          />
+          <p
+            *ngIf="
+              !originalData.fluxCommunityImage ||
+              originalData.fluxCommunityImage.startsWith('Fehler bei')
+            "
+          >
+            {{
+              originalData.fluxCommunityImage ||
+                "Flux-Bild (Original) konnte nicht generiert werden."
+            }}
+          </p>
+          <p
+            class="timing-info"
+            *ngIf="originalData.fluxCommunityImageTime !== undefined"
+          >
+            Benötigte Zeit:
+            {{ originalData.fluxCommunityImageTime | number : "1.0-0" }} ms
+          </p>
+        </div>
+      </div>
+      <p
+        *ngIf="
+          originalImageUrls.length === 0 && originalData.inputImages.length > 0
+        "
+        style="margin-left: 2rem"
+      >
+        Originalbilder werden geladen...
+      </p>
+      <p
+        *ngIf="originalData?.inputImages?.length === 0"
+        style="margin-left: 2rem"
+      >
+        Keine Originalbilder hochgeladen.
+      </p>
+    </div>
+
+    <div
+      *ngIf="comparisonData"
+      class="pipeline-column"
+      style="
+        flex: 1;
+        min-width: 300px;
+        border: 1px solid #007bff;
+        padding: 15px;
+        border-radius: 8px;
+      "
+    >
+      <h2>Ergebnisse (Kombination 2: Llama Vision, Deepseek, Flux)</h2>
+
+      <h3>A. Bildanalysen (Llama Vision)</h3>
+
+      <ul *ngIf="comparisonData.llamaVisionSummaries?.length">
+        <li
+          *ngFor="let item of comparisonData.llamaVisionSummaries"
+          style="margin-left: 2rem; margin-bottom: 5px"
+        >
+          <strong>{{ item.file.name }}:</strong>
+          <markdown [data]="item.summary" class="markdown-output"></markdown>
+        </li>
+      </ul>
+      <p
+        *ngIf="
+          !comparisonData.llamaVisionSummaries ||
+          comparisonData.llamaVisionSummaries.length === 0
+        "
+        style="margin-left: 2rem"
+      >
+        Keine Llama Vision-Analysen.
+      </p>
+      <table
+        class="timing-table"
+        *ngIf="comparisonData.llamaVisionSummaries?.length"
+      >
+        <caption>
+          Analysezeiten (Llama Vision)
+        </caption>
+        <tbody>
+          <tr *ngFor="let item of comparisonData.llamaVisionSummaries">
+            <td>{{ item.file.name }}</td>
+            <td>{{ item.analysisTime | number : "1.0-0" }} ms</td>
+          </tr>
+          <tr *ngIf="comparisonData.llamaVisionTotalAnalysisTime !== undefined">
+            <td><strong>Gesamt (Llama Vision Analyse)</strong></td>
+            <td>
+              <strong
+                >{{
+                  comparisonData.llamaVisionTotalAnalysisTime | number : "1.0-0"
+                }}
+                ms</strong
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>B. Generierter Text (Deepseek)</h3>
+      <markdown
+        [data]="
+          comparisonData.deepseekGeneratedText ||
+          'Kein Text von Deepseek generiert.'
+        "
+        class="markdown-output"
+      ></markdown>
+      <p
+        class="timing-info"
+        *ngIf="comparisonData.deepseekGeneratedTextTime !== undefined"
+      >
+        Benötigte Zeit:
+        {{ comparisonData.deepseekGeneratedTextTime | number : "1.0-0" }} ms
+      </p>
+
+      <h3>C. Essenz (Deepseek)</h3>
+      <markdown
+        [data]="
+          comparisonData.deepseekEssence ||
+          'Keine Essenz von Deepseek extrahiert.'
+        "
+        class="markdown-output"
+      ></markdown>
+      <p
+        class="timing-info"
+        *ngIf="comparisonData.deepseekEssenceTime !== undefined"
+      >
+        Benötigte Zeit:
+        {{ comparisonData.deepseekEssenceTime | number : "1.0-0" }} ms
+      </p>
+
+      <h3>D. Gemeinschaftsbild und Originalbilder (Kombination 2)</h3>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-left: 2rem;
+        "
+      >
+        <div
+          class="keyword-section"
+          style="margin-left: 2rem; margin-bottom: 15px"
+        >
+          <p><strong>Verwendete Keywords für Flux (Deepseek):</strong></p>
+          <pre class="code-block">{{
+            comparisonData.fluxPromptKeywords || "(Keine Keywords generiert)"
+          }}</pre>
+        </div>
+        <div style="flex: 0 0 58%; min-width: 200px; margin-right: 2%">
+          <p><strong>Originalbilder</strong></p>
+          <div style="display: flex; flex-wrap: wrap">
+            <div
+              *ngFor="let imageUrl of originalImageUrls; let i = index"
+              style="width: calc(50% - 10px); margin: 5px"
+            >
+              <img
+                [src]="imageUrl"
+                [alt]="
+                  (comparisonData.inputImages &&
+                    comparisonData.inputImages[i].name) ||
+                  'Originalbild ' + (i + 1)
+                "
+                style="
+                  height: 10rem;
+                  width: auto;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <div style="flex: 0 0 38%; min-width: 150px">
+          <p><strong>Gemeinschaftsbild (Flux - Vergleich)</strong></p>
+          <img
+            *ngIf="
+              comparisonData.fluxImageComparison &&
+              !comparisonData.fluxImageComparison.startsWith('Fehler bei')
+            "
+            [src]="comparisonData.fluxImageComparison"
+            alt="Generiertes Bild (Kombi 2)"
+            style="
+              width: 100%;
+              height: auto;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 1rem;
+            "
+          />
+          <p
+            *ngIf="
+              !comparisonData.fluxImageComparison ||
+              comparisonData.fluxImageComparison.startsWith('Fehler bei')
+            "
+          >
+            {{
+              comparisonData.fluxImageComparison ||
+                "Flux-Bild (Vergleich) konnte nicht generiert werden."
+            }}
+          </p>
+          <p
+            class="timing-info"
+            *ngIf="comparisonData.fluxImageComparisonTime !== undefined"
+          >
+            Benötigte Zeit:
+            {{ comparisonData.fluxImageComparisonTime | number : "1.0-0" }} ms
+          </p>
+        </div>
+      </div>
+      <p
+        *ngIf="
+          originalImageUrls.length === 0 &&
+          comparisonData &&
+          comparisonData.inputImages.length > 0
+        "
+        style="margin-left: 2rem"
+      >
+        Originalbilder werden geladen...
+      </p>
+      <p
+        *ngIf="comparisonData?.inputImages?.length === 0"
+        style="margin-left: 2rem"
+      >
+        Keine Originalbilder hochgeladen.
+      </p>
+    </div>
+  </div>
+</div>
+<div *ngIf="!originalData && !comparisonData">
+  <p>Noch keine Ergebnisse vorhanden oder Verarbeitung läuft.</p>
+</div>

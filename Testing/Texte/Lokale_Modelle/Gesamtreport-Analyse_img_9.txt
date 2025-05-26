@@ -1,0 +1,95 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_9.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes, die den Anforderungen entspricht:
+    
+    *   **Name:** Eisbär
+    *   **Farbe:** Weiß, Creme
+    *   **Verhalten:** Schwimmt, taucht
+    *   **Umgebung:** Eisfläche
+    *   **Anzahl:** Ein Exemplar
+    *   **Hintergrund:** Dunkelblau
+  Benötigte Zeit: 14.117 ms
+
+  Gesamte Analysezeit (Gemma): 14.117 ms
+
+2. Generierter Text (Llama 3.1):
+    Hier ist der Text:
+    "Hallo daheim! Wir haben heute etwas ganz besonderes für euch: einen Eisbären auf einer spannenden Abenteuerreise!
+    Einen Blick ins Bild werfen wir uns mal an. Da im Hintergrund ein tiefer Dunkelblauer Himmel, was sicherlich den Nachthimmel darstellt. Im Vordergrund unser kleiner weißer Freund; der Eisbär! Er ist auf einer Schnee-Eisfläche unterwegs und zeigt uns sein Können.
+    Er schwimmt durch das kalte Wasser mit so viel Souveränität, als wäre es ein warmes Bad für ihn. Er taucht mal nach unten, um etwas zu graben oder sich von der Kälte abzukühlen. Ein bisschen kann man auch sehen wie er am Strand liegt und sich sonnt.
+    Das ist unser faszinender Eisbär! Lernen wir mehr über den Eisbären. Der Eisbär lebt in extrem kalten Regionen, meist in der Nähe des Polarkreises, wo die Eisschilde unermüdlich weiterwachsen und die Temperaturen oft unter minus 40 Grad Celsius fallen."
+    Der Text enthält: Informationen zur Umgebung, zum Verhalten, zur Farbe und zur Größe des Eisbären. Außerdem sind einige Wissenswertes über den Lebensraum des Eisbären aufgenommen.
+   Benötigte Zeit: 5.999 ms
+
+3. Essenz (Llama 3.1):
+    Ein spannender Text!
+    Die absolute Kernaussage oder die Essenz des Textes lautet:
+    Der Eisbär lebt in extrem kalten Regionen, etwa bei minus 40 Grad Celsius. 
+    Das ist das Wichtigste!
+   Benötigte Zeit: 555 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Eisbär
+    *   Farbe: Weiß/Creme
+    *   Anzahl: Ein Exemplar
+    *   Verhalten: Schwimmt/Taucht
+    *   Umgebung: Eisfläche
+    *   Hintergrund: Dunkelblau
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.735 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_9.jpg
+  Analyse:
+    **Bildanalyse**
+    
+    ### Tierbeschreibung
+    * **Name:** Krokodil
+    * **Farbe:** dunkelgrau
+    * **Verhalten:** im Wasser schwimmen
+    * **Umgebung:** Gewässer mit viel Grün und Blattwerk
+    * **Anzahl:** 1
+    
+    ### Hintergrundinformationen
+    * **Hauptmotiv**: Krokodil ist das Hauptmotiv des Bildes.
+    * **Nebelgebiet:** kein Nebel in Sicht.
+  Benötigte Zeit: 8.613 ms
+
+  Gesamte Analysezeit (Llama Vision): 8.613 ms
+
+B. Generierter Text (Deepseek):
+    Heute möchte ich euch von einem spannenden Bild erzählen, das einen wunderbaren Augenblick im Wasser zeigt. In der Mitte des Bildes finns ein krokodil, das dunkelgrau ist und gerade schwimmt. Das Wasser ist klar und umschwirmt es mit viel Grün und Blättern, was wahrscheinlich ein See oder Fluss ist. Krokodile sind gute Schwimmer und geniessen es, in solchen natürlichen Gewässern herumzuschwimmen. Es ist besonders, wie das krokodil elegant durch die Wasserfläche gleitet, während die Umgebung von grünen Pflanzen umrahmt wird. Das Bild zeigt also nicht nur das krokodil, sondern auch die lebendige Umgebung, in der es sich bewegt. Haltet die Augen offen für diese interessanten Tiere und ihre besonderen Fähigkeiten!
+   Benötigte Zeit: 11.704 ms
+
+C. Essenz (Deepseek):
+    Der Text beschreibt ein Bild, auf dem ein krokodil im klaren Wasser schwimmt und von grünen Pflanzen umgeben ist. Krokodile sind gute Schwimmer und genießen es, in Natursäumen wie Seen oder Flüssen herumzuschwimmen. Das Bild zeigt nicht nur das krokodil, sondern auch die lebendige Umgebung, in der es sich bewegt.
+   Benötigte Zeit: 5.348 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - Tier: Krokodil  
+    - Farbe: Dunkelgrau  
+    - Verhalten: Schwimmen  
+    - Umgebung: Gewässer, Grün, Blattwerk  
+    - Anzahl: 1  
+    - Hintergrund: Hauptmotiv, kein Nebel
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.325 ms
+
+--- Verwendete Originalbilder ---
+- img_9.jpg

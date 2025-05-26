@@ -1,0 +1,95 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_21.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes in Form von Bullet Points:
+    
+    *   **Name:** Marienkäfer
+    *   **Farbe:** Rot, Schwarz
+    *   **Verhalten:** Auf Blättern
+    *   **Umgebung:** Grün, Blätter
+    *   **Anzahl:** Zwei
+    *   **Hintergrund:** Verschwommen, Grün
+  Benötigte Zeit: 14.428 ms
+
+  Gesamte Analysezeit (Gemma): 14.428 ms
+
+2. Generierter Text (Llama 3.1):
+    **Die Abenteuer der Marienkäfer**
+    Hallo Kinder! Heute erzählen wir euch eine wunderbare Geschichte über zwei besondere Freunde - die Marienkäfer! Die Marienkäfer sehen aus wie winzige Ritter mit ihren rot-schwarzen Panzern und sind bekannt für ihre großen Beine. Sie können sogar fliegen, aber sie mögen es lieber auf dem Boden.
+    **Wo leben unsere Marienkäfer?**
+    Die beiden Marienkäfer in unserem Bild befinden sich auf einem grünen Blatt. Hier ist es besonders warm und schön, genau das richtige für diese kleinen Freunde! Die Umgebung ist voller Blätter und Gras, ein perfekter Ort, um zu leben und sich zu bewegen.
+    **Was machen unsere Marienkäfer?**
+    Die Marienkäfer sind sehr aktiv. Sie laufen auf den Blättern herum und genießen die frische Luft. Manchmal finden sie sogar einen tollen Sonnenplatz für ein schnelles Nickerchen!
+    **Einige interessante Details:**
+    *   Die Marienkäfer sehen aus, als ob sie in einem Rot-Weiß-Schema auf einem dunklen Grund maliert wären.
+    *   Ihre Beine sind sehr lang und kräftig, um überall hinlaufen zu können.
+    *   Sie haben auch einen Hinterkopf, der nicht wie ihr Körper aussieht. 
+    Die Marienkäfer sind faszinierende Insekten, die ein besonderes Abenteuer im Grünen erleben. Vielleicht könnt ihr euch vorstellen, dass sie auf einem großen Baum leben oder in einer grünen Oase!
+   Benötigte Zeit: 6.416 ms
+
+3. Essenz (Llama 3.1):
+    Das Allerwichtigste ist:
+    Die Marienkäfer sehen aus wie winzige Ritter mit ihren rot-schwarzen Panzern und sind bekannt für ihre großen Beine. Sie können sogar fliegen, aber sie mögen es lieber auf dem Boden.
+    *   Die beiden Marienkäfer in unserem Bild befinden sich auf einem grünen Blatt.
+    *   Die Umgebung ist voller Blätter und Gras, ein perfekter Ort, um zu leben und sich zu bewegen.
+   Benötigte Zeit: 1.049 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Marienkäfer
+    *   Farbe: Rot-Schwarz
+    *   Anzahl: Zwei
+    *   Verhalten: Auf Blättern laufen
+    *   Umgebung: Grün, Blätter
+    *   Hintergrund: Verschwommen, Grün
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.786 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_21.jpg
+  Analyse:
+    *   **Tier:** Otter
+    *   **Farbe:** Braun mit grauen Tönen
+    *   **Verhalten:** Läuft auf Hinterbeinen und nimmt etwas von der Erde auf
+    *   **Umgebung:** Gras- und Blumenwiese im Frühling mit Blüten in verschiedenen Farben.
+    *   **Anzahl:** 2
+    *   **Hintergrund:** Waldlandschaft mit Bäumen in den Hintergrund.
+  Benötigte Zeit: 8.899 ms
+
+  Gesamte Analysezeit (Llama Vision): 8.899 ms
+
+B. Generierter Text (Deepseek):
+    Die Geschichte der süßen Otter im Frühling:
+    Hast du je Otter gesehen? Das sind niedliche, wasserfreundliche Tiere mit weichem braunem Fell, das manchmal graue Streifen hat. Auf dem Bild laufen zwei Otter auf ihren Hinterbeinen durch eine grüne Wiese im Frühling, die voller blühender Blumen ist. Die Farben sind so leuchtend wie Regenbogen! Die Otter tragen etwas Erdiges in den Pfoten –或许是they are collecting food like fish or maybe even stones for their dens. Sie leben meist zu zweit und sind immer auf der Suche nach Nahrung im Wald, der mit Bäumen in der Ferne beginnt. Obwohl sie im Wasser lebt, können Otter auch auf dem Land laufen und sind echt clever!
+   Benötigte Zeit: 14.635 ms
+
+C. Essenz (Deepseek):
+    Die süßen Otter lieben das Wasser und haben weiches braunes Fell. Obwohl sie im Wasser leben, können sie auch auf dem Land laufen. Sie sind klug und suchen nach Nahrung zusammen mit einem Partner.
+   Benötigte Zeit: 8.816 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - **Tier:** Otter  
+    - **Farbe:** Braun/grau  
+    - **Anzahl:** 2  
+    - **Verhalten:** Hindbeinen läuft, Erdensachen nimmt  
+    - **Umgebung:** Graswiese, Blumen, Frühling  
+    - **Hintergrund:** Waldlandschaft, Bäume
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.495 ms
+
+--- Verwendete Originalbilder ---
+- img_21.jpg

@@ -1,0 +1,89 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_2.jpg
+  Analyse:
+    Absolut! Hier ist eine detaillierte Analyse des Bildes:
+    
+    *   **Name:** Rothirsch
+    *   **Farbe:** Braun, dunkel
+    *   **Verhalten:** Steht, grast
+    *   **Umgebung:** Waldlichtung
+    *   **Anzahl:** Ein Tier
+    *   **Hintergrund:** Verschwommenes Grün
+  Benötigte Zeit: 16.699 ms
+
+  Gesamte Analysezeit (Gemma): 16.699 ms
+
+2. Generierter Text (Llama 3.1):
+    In einem wunderschönen Waldbereich steckt sich ein prächtiger Rothirsch in der Sonne. Sein dickes, dunkelbraunes Fell strahlt Wärme und Schutz aus. Er steht still, mit dem Rücken zur Kamera, den Kopf leicht nach unten gebeugt, als ob er etwas interessantes entdeckt hat.
+     Aufmerksamkeit! Der Rothirsch grast an einem Grasfleck in der Waldlichtung. Die Blätter des Baumes hinter ihm sind nicht zu sehen, sondern geben ein Verschwommenes Grün ab, das einen natürlichen Rahmen für den Schauspiel bildet. Er bewegt sich langsam und vorsichtig mit seinen großen Ohren nach allen Seiten, als ob er aufmerksam ist. Der Waldboden unter seinen Hufen ist sehr dunkel, und das Gras dort ist tiefgrün.
+    Aber was macht dieser Rothirsch so interessant? Er ist ein wichtiger Teil der Natur, ein Tier, das in den Wäldern lebt. Seine Farbe ist dunkelbraun, sodass er sich gut in seinem Lebensraum verstecken kann. Der Hirsch bewegt sich mit einer ruhigen Eleganz, die zeigt, dass es keine Panik oder Angst um ihn gibt. Er steht ganz allein auf einem Fleck Gras und sieht friedlich aus.
+    Die Tiere leben in Wäldern wie diesem im Norden von Europa. Sie sind oft nicht sehr gut sichtbar, da sie sich in dichten Büschen verstecken können. Aber der Rothirsch hier ist sichtbar, weil er grast und den Waldboden erkunden will.
+   Benötigte Zeit: 6.458 ms
+
+3. Essenz (Llama 3.1):
+    Ein Text über einen prächtigen Rothirsch!
+    **Die Kernaussage:**
+    Der Rothirsch ist ein wichtiger Teil der Natur in Wäldern im Norden von Europa. Er kann sich gut verstecken, weil er dunkelbraun ist und sehr vorsichtig bewegt sich. 
+    Ich hoffe, diese drei kurzen Sätze passen zu den Kriterien, die du mir genannt hast!
+   Benötigte Zeit: 877 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Rothirsch
+    *   Dunkelbraun
+    *   Steht und grast
+    *   Ein Tier im Waldlichtung
+    *   Verschwommenes Grün
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 18.224 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_2.jpg
+  Analyse:
+    ### Bildanalyse
+    *   **Name:** Das Bild zeigt ein Meerkat (Suricata suricatta).
+    *   **Farbe**: Das Meerkat ist hauptsächlich gelb gefärbt mit einem weißen Bauch und schwarzen Augen.
+    *   **Verhalten:** Das Meerkat sitzt auf einer Baumstelle, die sich vermutlich in einem Nationalpark oder Zoo befindet, da es nicht im freien Feld zu sehen ist. Es scheint nach oben zu schauen, was darauf schließen lässt, dass es beobachtet wird.
+    *   **Umgebung:** Die Umgebung des Meerkats besteht aus einer Baumstelle und dichter Vegetation. Der Baum hat ein dickes Stamm und eine zentrale Lücke in der Rinde, die das Meerkat als Sitzplatz nutzt.
+    *   **Anzahl**: Auf dem Bild ist nur ein einzelnes Meerkat zu sehen.
+    *   **Hintergrund:** Im Hintergrund des Bildes sind weitere Bäume und Vegetation zu erkennen. Der Boden ist mit Blättern und anderen Pflanzenresten bedeckt, was darauf hinweisen könnte, dass sich der Standort im Wald oder in einem dichten Wäldchen befindet.
+    *   **Hinweis:** Die Umgebung des Meerkats wird durch seine Baumstelle begrenzt. Es gibt keine weiteren Tiere oder Menschen auf dem Bild zu sehen.
+  Benötigte Zeit: 11.449 ms
+
+  Gesamte Analysezeit (Llama Vision): 11.449 ms
+
+B. Generierter Text (Deepseek):
+    Habt ihr schon mal von der Meerkat gehört? Sie ist eine lustige kleine Affenart mit gelbem Fell und einem weißen Bauch. Auf dem Bild sitzt ein Meerkat auf einem Baumstamm in einem Nationalpark oder im Zoo. Es lugt nach oben, als ob es jemanden beobachtet. Der Baum hat einen großen Rindenloch, das der Meerkat als Sitzplatz nutzt. Um ihn herum ist dichtes Grün und am Boden liegen Blätter. Ob das Meerkat gerade auf uns oder auf die Bäume aufmerksam wird? Vielleicht ist es auf der Suche nach frischen Blättern oder einem Spielgefährten!
+   Benötigte Zeit: 13.529 ms
+
+C. Essenz (Deepseek):
+    Natürlich! Das Allerwichtigste in einem Text ist die absolute Kernaussage oder die Essenz – das, was unbedingt wissen muss. Sie findet man oft am Ende des Textes und fasst den Inhalt kurz zusammen. Im Beispieltext handelt es sich um eine lustige kleine Affenart namens Meerkat mit gelbem Fell und einem weißen Bauch, die im Zoo oder Nationalpark sitzt, nach oben lugt und auf etwas sucht!
+   Benötigte Zeit: 7.706 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    - **Tier:** Meerkat  
+    - **Farbe:** Yellow/white/black  
+    - **Verhalten:** Sitting/watching up  
+    - **Umgebung:** Tree trunk/dense vegetation  
+    - **Anzahl:** Single  
+    - **Pflanze:** Trees/plants  
+    - **Hintergrund:** Forest/background trees  
+    - **Baumstelle:** Thick bark/hole
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.212 ms
+
+--- Verwendete Originalbilder ---
+- img_2.jpg

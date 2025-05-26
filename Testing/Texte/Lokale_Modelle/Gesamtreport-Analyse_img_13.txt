@@ -1,0 +1,97 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_13.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes:
+    
+    *   **Name:** Weißer Storch
+    *   **Farbe:** Weiß, Schwarz
+    *   **Verhalten:** Steht, betrachtet
+    *   **Umgebung:** Grasland, offen
+    *   **Anzahl:** Ein Exemplar
+    *   **Hintergrund:** Bewölkter Himmel
+  Benötigte Zeit: 18.757 ms
+
+  Gesamte Analysezeit (Gemma): 18.757 ms
+
+2. Generierter Text (Llama 3.1):
+    Ein wunderschönes Bild zeigt uns einen majestätischen Weißen Storch! Der Vogel steht auf dem offenen Grasland und betrachtet sein Umfeld, so als würde er sich umsehen, bevor er weiterfliegt. Sein prächtiges Weißes Gefieder blitzt im Sonnenlicht, während seine schwarzen Flügel und Schwanz ihn wie ein eleganten Herrscher aussehen lassen.
+    Was den Weißen Storch besonders macht? Er ist einer der größten Vogelarten in Europa und kann bis zu 1,80 Meter hoch werden. Die Weißstörche sind bekannt für ihre langen Flüge über weite Distanzen. Sie suchen nach Nahrung auf dem Boden und können auch Fische im Wasser fressen.
+    Der Himmel zeigt sich bewölkt, was der Vogel nicht zu stören scheint. Der Weiße Storch ist an das Leben in allen Wetterbedingungen gewöhnt, und er kann auch gut fliegen, wenn es stark regnet oder bläst. Dieses Bild zeigt uns, dass selbst ein majestätischer Vogel wie der Weiße Storch nicht immer ruhig steht, sondern sich gerne um sein Umfeld bewusst ist.
+    Das Bild des Weißen Storches bietet uns auch eine Chance, mehr über diese wunderbare Vogelart zu lernen. Wir können seine Farben und seinen Körperbau betrachten, um mehr über die Biologie dieser wunderschönen Vögel zu erfahren.
+   Benötigte Zeit: 6.211 ms
+
+3. Essenz (Llama 3.1):
+    Lass mich dir das Wichtigste erzählen!
+    Der Weiße Storch ist ein großer Vogel in Europa, der bis zu 1,80 Meter hoch werden kann. Er kann lang fliegen und sieht aus wie ein eleganter Herrscher. Der Weiße Storch ist an alle Wetterbedingungen gewöhnt und kann auch gut fliegen, wenn es stark regnet oder bläst!
+   Benötigte Zeit: 872 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    *   Tier: Weißer Storch
+    *   Farbe: Weiß/Schwarz
+    *   Anzahl: Ein Exemplar
+    *   Verhalten: Steht/betrachtet
+    *   Umgebung: Grasland/offen
+    *   Hintergrund: Bewölkter Himmel
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.394 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_13.jpg
+  Analyse:
+    **Tieranalyse**
+    
+    * **Name:** Der Name des Tieres ist nicht eindeutig bestimmbar. Es handelt sich jedoch wahrscheinlich um eine Art Storkenart.
+    * **Farbe:** Die vorherrschende Farbe des Tieres ist Weiß mit einer dunklen Flügelzeichnung und einem roten Schnabel.
+    * **Verhalten:** Das Tier steht auf der Erde und schaut nach links, wie wenn es sich um einen Beobachtungspunkt handelt.
+    * **Umgebung:** Die Umgebung besteht aus einem Grasland mit einigen Bäumen im Hintergrund.
+    * **Anzahl:** Es gibt nur ein einzelnes Tier, das sichtbar ist.
+    * **Hintergrund:** Der allgemeine Hintergrund des Bildes scheint eine ländliche oder naturbelassene Landschaft zu sein.
+    
+    **Bildanalyse**
+    
+    * **Kameraausrichtung:** Die Kamera scheint von Südosten aus aufgenommen worden zu sein, da die Sonne im Norden der Aufnahme zu sehen ist.
+    * **Belichtungszeit:** Die Belichtungszeit des Bildes scheint relativ lang gewesen zu sein, da sich keine starken Schatten oder Lichtreflexe im Bild befinden.
+    * **Kameraobjektiv:** Das Kameraobjektiv scheint eine hohe Brennweite zu haben, da die Details der Landschaft und des Tieres sehr scharf dargestellt sind.
+  Benötigte Zeit: 13.297 ms
+
+  Gesamte Analysezeit (Llama Vision): 13.297 ms
+
+B. Generierter Text (Deepseek):
+    Liebe Kinder,  
+    Auf diesem Bild ist ein seltsames Tier zu sehen. Es könnte eine Art Storch sein, aber das ist nicht sicher. Das Tier hat weiße Federn mit dunklen Markierungen auf den Flügeln und einen roten Schnabel. Es steht auf dem Grasland und blickt nach links, als würde es etwas beobachten. Um es herum gibt Bäume im Hintergrund.  
+    Das Foto wurde von Südosten aus gemacht, also ist die Sonne im Norden zu sehen. Der Fotograf hat lange aufgebraucht, um das Bild zu schießen, deshalb sind keine starken Schatten oder Glanzlichter zu sehen. Das bedeutet, dass der Storch gut sichtbar und in Ruhe zu betrachten war. Mit dem großen Objektiv der Kamera sind die Details des Tieres und der Landschaft perfekt aufgezeichnet worden.  
+    Habt ihr je einen Storch gesehen? Was denkt ihr über diese seltsame Kreatur?
+   Benötigte Zeit: 12.322 ms
+
+C. Essenz (Deepseek):
+    Das Bild zeigt ein seltsames Tier, das wahrscheinlich ein Storch ist. Er hat weiße Federn mit dunklen Markierungen und einen roten Schnabel. Das Foto wurde so aufgenommen, dass der Storch gut zu sehen war. Habt ihr schon mal einen Storch gesehen?
+   Benötigte Zeit: 5.562 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - **Tierart:** Storkenart  
+    - **Farbe:** Weiss, Dunkle Flügel, Roter Schnabel  
+    - **Verhalten:** Steht und nach links schaut  
+    - **Umgebung:** Grasland mit Bäumen im Hintergrund  
+    - **Anzahl:** Einzelnes Tier  
+    - **Hintergrund:** Ländliche Landschaft  
+    - **Kameraausrichtung:** Südost  
+    - **Belichtungszeit:** Langzeitbelichtung  
+    - **Kameraobjektiv:** Hohe Brennweite
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.276 ms
+
+--- Verwendete Originalbilder ---
+- img_13.jpg

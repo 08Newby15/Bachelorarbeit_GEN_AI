@@ -1,0 +1,94 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_6.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes, wie angefordert:
+    
+    *   **Name:** Rothaariger Affe
+    *   **Farbe:** Braun, rot
+    *   **Verhalten:** Sitzt, blickt
+    *   **Umgebung:** Beton, Zaun
+    *   **Anzahl:** Eins
+    *   **Hintergrund:** Bäume, Himmel
+  Benötigte Zeit: 15.791 ms
+
+  Gesamte Analysezeit (Gemma): 15.791 ms
+
+2. Generierter Text (Llama 3.1):
+    Seid ihr bereit für eine Abenteuerreise durch die Wildnis?
+    Ein wunderschönes Bild zeigt uns einen Rothaarigen Affen. Sein Fell ist ein warmes Braun mit roten Haaren, die ihm wie ein lockiges Schopf auf dem Kopf wachsen.
+    Der Affe sitzt friedlich auf einem Zaun, der aus festem Beton besteht. Um ihn herum wachsen hohe Bäume, deren Blätter sich im leichten Wind wiegeln. Der Himmel darüber ist wolkenlos und strahlt in einem helleren Blau.
+    Was macht den Affen so besonders? Immerhin ist er nicht allein auf dem Zaun. Die Umgebung gibt uns wichtige Hinweise darauf, dass dieser Affe frei lebt. Freiheit hat es ihm ermöglicht, sich hier anzusiedeln und sich wohl zu fühlen.
+    Hinter der Szene dieses Bildes steckt ein wundervolles Geheimnis. Diese Art von Affen lebt tatsächlich in den Wäldern Afrikas. Sie sind bekannt für ihre scharfen Augen, die ihnen helfen, frische Früchte zu finden und sich sicher fortzubewegen.
+    Viele Lebewesen teilen diese Welt mit uns. Egal ob in den Wäldern oder auf der Straße, wir müssen vorsichtig sein, um nicht jemandem Unheil anzutun.
+   Benötigte Zeit: 6.300 ms
+
+3. Essenz (Llama 3.1):
+    Hier ist die Kernaussage des Textes in 3 kurzen Sätzen:
+    Der Text erzählt von einem Rothaarigen Affen, der frei in den Wäldern Afrikas lebt. Er zeigt uns, wie wichtig es ist, Lebewesen respektvoll zu behandeln und vorsichtig mit ihnen umzugehen. So können wir zusammen mit allen Tieren eine harmonische Welt schaffen.
+   Benötigte Zeit: 901 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    * Name: Rothaariger Affe
+    * Farbe: Braun-Rot
+    * Verhalten: Sitzt-Blickt
+    * Anzahl: Eins
+    * Umgebung: Beton-Zaun
+    * Hintergrund: Bäume-Himmel
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 18.011 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_6.jpg
+  Analyse:
+    **Bildanalyse**
+    
+    * **Tier:** Giraffe
+    * **Farbe:**
+    	+ Braun
+    	+ Weiß
+    	+ Schwarz
+    * **Verhalten:** Der Kopf ist nach links gedreht. Es scheint, als ob das Tier einen Schritt vorwärts macht.
+    * **Umgebung:** Eine Palme steht im Hintergrund und eine Mauer in der Nähe des Tiers.
+    * **Anzahl:** Eines
+    * **Hintergrund:** In der Ferne sieht man einen Bauernhof.
+    
+    Die Giraffe zeigt ein interessiertes Verhalten. Es scheint, als ob das Tier nach etwas sucht. Der Kopf ist nach links gedreht und es macht einen Schritt vorwärts. Die Umgebung besteht aus einer Palme im Hintergrund und einer Mauer in der Nähe des Tiers. Einziges Exemplar dieser Art zu sehen. Im Hintergrund sieht man eine Bauernhofsiedlung.
+  Benötigte Zeit: 10.285 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.285 ms
+
+B. Generierter Text (Deepseek):
+    Hey Jungs und Mädchen! Schaut euch mal diese Giraffe an – sie ist so cool! Sie hat schöne braune, weiße und schwarze Flecken, die wie ein Muster auf ihrem Fell sind. Der Hals ist lang, und ihr Kopf ist nach links gedreht, als ob sie etwas Interessantes sucht. Die Giraffe macht einen Schritt vorwärts, als wollte sie näher an etwas herankommen.
+    Um sie herum gibt es eine dicke Mauer nahe bei ihr und in der Ferne steht eine Palme. Hinter den Bäumen sieht man auch noch ein Farmgelände. Es ist toll, wie die Giraffe so neugierig durch die Savanne stapft und die Welt erkundet!
+   Benötigte Zeit: 11.713 ms
+
+C. Essenz (Deepseek):
+    Die Giraffe ist neugierig und erkundet die Welt, indem sie durch die Savanne stapft.
+   Benötigte Zeit: 2.277 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **
+    
+    - Tier: Giraffe  
+    - Farben: Braun, Weiss, Schwarz  
+    - Anzahl: Eins  
+    - Verhalten: Kopf links, Schritt vorwärts  
+    - Umgebung: Palme, Mauer  
+    - Hintergrund: Bauernhof
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.269 ms
+
+--- Verwendete Originalbilder ---
+- img_6.jpg

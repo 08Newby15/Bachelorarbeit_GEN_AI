@@ -1,0 +1,95 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_18.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes in Bullet Points:
+    
+    *   **Tier:** Gepard
+    *   **Farbe:** Gold, Schwarz
+    *   **Verhalten:** Liegt, entspannt
+    *   **Umgebung:** Sand, trocken
+    *   **Anzahl:** Ein
+    *   **Hintergrund:** Wüstenlandschaft
+  Benötigte Zeit: 16.101 ms
+
+  Gesamte Analysezeit (Gemma): 16.101 ms
+
+2. Generierter Text (Llama 3.1):
+    **Entdecke die majestätische Gepardin im Wüstengebirge!**
+    In der wunderschönen Landschaft einer Wüste liegt eine wundervolle Erscheinung: Eine Gepardin in ihrer natürlichen Umgebung. Die Gepardin ist ein prächtiges Tier mit einer außergewöhnlichen Farbgebung, die sich durch eine goldene und schwarze Musterung auszeichnet. Sie zeigt uns ihr entspanntes Wesen, indem sie mit geschlossenen Augen am Boden liegt.
+    Das Wüstengebirge bietet der Gepardin einen perfekten Lebensraum, in dem sie leicht laufen und jagen kann. Die trockene Sandebene rund um sie zeugt von einer Welt voller Hitze und Trockenheit, die den Tieren hier einzigartige Anpassungen abverlangt.
+    Diese wunderschöne Gepardin ist alleine unterwegs und zeigt uns ihre natürliche Schönheit.
+   Benötigte Zeit: 5.287 ms
+
+3. Essenz (Llama 3.1):
+    Das Wichtigste für das Kind zu wissen wäre:
+    Die Gepardin ist ein großes, prächtiges Tier, das in der Wüste lebt und sich durch ihre goldene und schwarze Farbgebung auszeichnet.
+    Dazu gehört eine kurze Beschreibung des Lebensraums der Gepardin, also die trockene Sandebene im Wüstengebirge.
+   Benötigte Zeit: 769 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Gepard
+    *   Farbe: Gold/Schwarz
+    *   Anzahl: Ein
+    *   Umgebung: Sand/trocken
+    *   Verhalten: Entspannt/liegt
+    *   Hintergrund: Wüste
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.415 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_18.jpg
+  Analyse:
+    **Analyse des Bildes**
+    
+    Das angegebene Bild zeigt eine Gruppe von Meerkatzen in ihrer natürlichen Umgebung.
+    
+    * **Name:** Meerkatze
+    * **Farbe:** Die Meerkatzen haben eine hellbraune Färbung mit dunklen Augen und Ohren.
+    * **Verhalten:** Die Meerkatzen sind aufrecht sitzend, einige davon beobachten den Himmel oder ihre Umgebung.
+    * **Umgebung:** Das Bild zeigt eine Sandfläche vor einer Felswand. In der Nähe finden sich einige große Steine und ein Loch im Boden.
+    * **Anzahl:** Es gibt zehn Meerkatzen zu sehen.
+    * **Hintergrund:** Im Hintergrund befindet sich eine Berglandschaft mit blauen Himmel.
+    
+    Die Meerkatze ist bekannt für ihre gesellige Natur. Sie leben in Gruppen, die normalerweise aus einer Dominantenpaarung und ihren Nachkommen bestehen. Die Meerkatzen sind auch bekannt für ihre Intelligenz und können komplexe soziale Strukturen aufbauen.
+  Benötigte Zeit: 10.622 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.622 ms
+
+B. Generierter Text (Deepseek):
+    Schau mal, was für eine Meerkatzengruppe! Siebzehn Meerkatzen sitzen aufrecht auf einem Sandplatz. Einige schauen nach oben oder um sich herum, wahrscheinlich auf der Suche nach Nahrung oder Gefahren. Um sie herum sind große Steine und ein Loch im Boden zu sehen. Hinter ihnen erhebt sich eine felsige Berglandschaft unter einem blauen Himmel. Meerkatzen sind supergesellig und leben in großen Gruppen, die von einer dominierenden Paarung geführt werden. Sie sind auch wirklich clever und bilden komplexe soziale Strukturen, was ihnen bei der gemeinsamen Existenz hilft.
+   Benötigte Zeit: 10.829 ms
+
+C. Essenz (Deepseek):
+    **Die wichtigsten Informationen:**  
+    - Meerkatzen leben in großen Gruppen und sind sehr gesellig.  
+    - Sie sind klug und bilden komplexe soziale Strukturen, um zusammenzuleben.  
+    - Die Gruppe wird von einer dominanten Paarung geleitet, die sicher und stark ist.
+   Benötigte Zeit: 4.644 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - Name: Meerkatze  
+    - Farbe: hellbraun  
+    - Verhalten: aufrecht sitzend, Beobachten  
+    - Umgebung: Sandfläche, Felswand, Steine, Loch  
+    - Anzahl: 10  
+    - Hintergrund: Berglandschaft, Himmel: blau
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 15.949 ms
+
+--- Verwendete Originalbilder ---
+- img_18.jpg

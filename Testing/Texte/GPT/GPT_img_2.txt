@@ -1,0 +1,46 @@
+Rolle 1 – Bildanalyse (max. 35 Tokens, 3 Wörter je Punkt):
+
+Name: Erdmännchen
+
+Farbe: Braun, Schwarz, Beige
+
+Verhalten: Aufmerksam sitzend
+
+Umgebung: Auf Baumstamm
+
+Anzahl: Ein Exemplar
+
+Hintergrund: Unscharfe Vegetation
+
+Rolle 2 – Kindgerechter Text (80–100 Wörter):
+
+Schau mal! Das ist ein Erdmännchen – ein neugieriges kleines Tier, das oft auf zwei Beinen steht, um sich umzuschauen. Dieses hier sitzt gerade aufmerksam auf einem Baumstamm und beobachtet seine Umgebung ganz genau. Mit seinem braunen Fell, den schwarzen Augenringen und der spitzen Schnauze sieht es richtig niedlich aus! Erdmännchen leben normalerweise in Gruppen und passen gut aufeinander auf. Im Hintergrund siehst du viele grüne Pflanzen – das könnte in einem Zoo oder einem Park sein. Erdmännchen sind echte Wächter der Savanne. Kennst du noch andere Tiere, die aufpassen?
+
+Rolle 3 – Kernaussage in 3 einfachen Sätzen:
+
+Ein Erdmännchen sitzt aufmerksam auf einem Baumstamm.
+Es beobachtet neugierig die Umgebung.
+Erdmännchen sind schlaue kleine Wächter.
+
+Rolle 4 – Zusammenfassung:
+
+Zusammenfassung:
+
+Tier: Erdmännchen
+
+Farbe: Braun Beige
+
+Anzahl: Einzeln sichtbar
+
+Verhalten: Neugierig sitzend
+
+Umgebung: Auf Baumstamm
+
+Hintergrund: Grüne Pflanzen
+
+- Name: Erdmännchen
+- Farbe: Braun, Schwarz, Beige
+- Verhalten: Aufmerksam sitzend
+- Umgebung: Auf Baumstamm
+- Anzahl: Ein Exemplar
+- Hintergrund: Unscharfe Vegetation

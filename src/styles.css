@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primary-color: #007bff; 
+  --primary-color-darker: #0056b3;
+  --text-color: #333;
+  --text-color-light: #666;
+  --bg-color: #f4f7f9; 
+  --content-bg-color: #ffffff; 
+  --border-color: #dee2e6;
+  --border-color-light: #e9ecef;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --spacing-unit: 8px; 
+  --border-radius: 6px; 
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%; 
+  font-family: "Inter", sans-serif; 
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: calc(
+    2 * var(--spacing-unit)
+  ); 
+}
+
+body {
+  overflow: auto; 
+}
+
+app-root .container {
+  max-width: 90%; 
+  width: 100%; 
+  background-color: var(--content-bg-color);
+  padding: calc(4 * var(--spacing-unit));
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: calc(2 * var(--spacing-unit)) auto; 
+  overflow-y: auto; 
+  max-height: 95vh; 
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: calc(2 * var(--spacing-unit));
+  font-weight: 500;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: calc(3 * var(--spacing-unit));
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: calc(1.5 * var(--spacing-unit));
+  color: var(--text-color-light);
+}
+
+button {
+  padding: var(--spacing-unit) calc(2 * var(--spacing-unit));
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: var(--primary-color-darker);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.progress-steps ul {
+  list-style: none;
+  padding: 0;
+}
+.progress-steps li {
+  margin-bottom: 8px;
+}
+
+.spinner-inline {
+  display: inline-block;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  margin-right: 5px;
+  vertical-align: middle; 
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.progress-steps li span:first-child {
+  display: inline-block;
+  min-width: 200px; 
+}

@@ -1,0 +1,91 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_5.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes in Bullet Points:
+    
+    * **Name:** Taube (Rocktaube)
+    * **Farbe:** Grau, weiß, rot
+    * **Verhalten:** Sitzt, pickt
+    * **Umgebung:** Metallgeländer
+    * **Anzahl:** Eins
+    * **Hintergrund:** Unschärfer Hintergrund
+  Benötigte Zeit: 17.307 ms
+
+  Gesamte Analysezeit (Gemma): 17.307 ms
+
+2. Generierter Text (Llama 3.1):
+    **Entdecke die schöne Rocktaube!**
+    Komm und guck mal! Hier ist eine wunderschöne Taube, auch bekannt als Rocktaube. Sie sitzt auf einem Metallgeländer und pickt sorgfältig an den Blättern herum.
+    Die Rocktaube hat ein besonderes Federkleid: Grau, Weiß und Rot - was für ein wundervolles Muster! Sie ist ganz allein auf dem Geländer, aber das macht sie nicht einsam. Vielleicht sucht sie einfach nur nach der nächsten Mahlzeit.
+    Hinter ihr ist der Himmel ein bisschen verschwommen, weil er sehr hell oder sehr dunkel ist. Das bedeutet, dass die Sonne gerade über den Wolken steht oder es vielleicht ein bisschen regnet.
+    Komm her und beobachte diese schöne Taube - sie ist so friedlich! Vielleicht kannst du auch lernen, wie man sich um Tauben kümmert, damit sie sich wohl in ihrer neuen Umgebung fühlen.
+   Benötigte Zeit: 5.272 ms
+
+3. Essenz (Llama 3.1):
+    Ich habe den Text sorgfältig gelesen, um die Kernaussage für Kinder zu finden:
+    "Die Rocktaube ist ein wundervolles Vogel mit einem bunten Federkleid und lebt wahrscheinlich allein, aber sie sucht vielleicht nach Futter."
+    Dieses kurze Statement fasst die wichtigste Information des Textes zusammen: Die Beschreibung der Rocktaube und ihres Verhaltens. Es sind nur drei Sätze, klar und einfach geschrieben und soll neugierig machen!
+   Benötigte Zeit: 1.013 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    * Tier: Rocktaube
+    * Farbe: Grau, weiß, rot
+    * Anzahl: Eins
+    * Verhalten: Sitzt, pickt
+    * Umgebung: Metallgeländer
+    * Hintergrund: Unschärfer
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.563 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_5.jpg
+  Analyse:
+    *   **Name:** Die Art des Tieres ist nicht eindeutig bestimmt. Es könnte eine Dohle oder ein Storch sein.
+    *   **Farben:** Das Hauptmotiv hat vorherrschend Braun-, Grau- und Weißfärbungen.
+    *   **Verhalten:** Der Vogel steht auf einer festen Struktur mit einem schmalen Geländer. Sein Kopf ist leicht nach unten geneigt. Die Flügel sind nicht zu erkennen. Es scheint, als ob er sich gerade bewegt.
+    *   **Umgebung:** Das Bild zeigt eine dunkle Umgebung in der Nähe des Gelsäckers auf einem Hügel. Im Vordergrund sieht man ein Geländer und darunter ist ein schmaler Abhang mit Grasland.
+    *   **Anzahl:** Es gibt nur einen Vogel sichtbar.
+    *   **Hintergrund:** Das Bild zeigt eine dunkle Landschaft mit verschiedenen Farben in der Nähe eines Gelsäckers. Im Vordergrund sieht man ein Geländer und darunter ist ein schmaler Abhang mit Grasland.
+    
+        *   Die Ausgabe hat 35 Tokens.
+    *   **Beachten Sie:** Die Ausgabe enthält nur Bullet Points, die maximal drei Wörter haben.
+  Benötigte Zeit: 12.136 ms
+
+  Gesamte Analysezeit (Llama Vision): 12.136 ms
+
+B. Generierter Text (Deepseek):
+    Hey ihr Lieben! Schaut euch mal diese mysteriöse Szene an: Es gibt einen Vogel, der könnte entweder ein Raben oder ein Storch sein. Sein Haupt ist in dunklen und warmen Farben wie Braun, Grau und Weiß gehalten. Der Vogel steht auf einem Holzgeländer, das auf einem Hügel steht. Er hat den Kopf leicht nach unten geneigt und es sieht aus, als ob er sich gerade bewegt.
+    Um ihn herum ist eine dunkle Landschaft mit einem grasigen Abhang. Das Bild wurde vermutlich nahe einem Gelsäcker gemalt, der in der Nähe eines Hügels liegt. Es gibt nur einen Vogel im Vordergrund und die Umgebung wirkt still und geheimnisvoll. Könnt ihr euch vorstellen, was dieser Vogel gerade tun mag? 😊
+   Benötigte Zeit: 13.691 ms
+
+C. Essenz (Deepseek):
+    Der Text beschreibt eine geheimnisvolle Szene mit einem Vogel, der entweder ein Rabe oder ein Storch sein könnte. Der Vogel steht auf einem Holzgeländer auf einem Hügel und hat dunkle, warme Farben wie Braun, Grau und Weiß am Kopf. Die Umgebung ist still und geheimnisvoll mit einer dunklen Landschaft und einem grasigen Abhang.
+   Benötigte Zeit: 5.740 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - Tierart: Dohle/Storch  
+    - Farben: Braun/Grau/Weiß  
+    - Verhalten: Steht/Trippelt  
+    - Umgebung: Dunkel/Natur/Hügel  
+    - Anzahl: Ein Tier  
+    - Hintergrund: Landschaft/Geländer/Grasland
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 15.956 ms
+
+--- Verwendete Originalbilder ---
+- img_5.jpg

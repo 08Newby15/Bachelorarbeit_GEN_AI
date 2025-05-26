@@ -1,0 +1,11 @@
+.download-buttons {
+  margin-top: calc(3 * var(--spacing-unit));
+  padding-top: calc(3 * var(--spacing-unit));
+  border-top: 1px solid var(--border-color-light);
+  text-align: center; 
+}
+
+.download-buttons button {
+  margin: 0 var(--spacing-unit); 
+  min-width: 150px;
+}

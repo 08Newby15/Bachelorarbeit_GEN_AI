@@ -1,0 +1,88 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_28.jpg
+  Analyse:
+    Hier ist die Analyse des Bildes:
+    
+    *   **Name:** Europäischer Zauneidechse
+    *   **Farbe:** Grün, braun
+    *   **Verhalten:** Sonnt sich
+    *   **Umgebung:** Steine, Gras
+    *   **Anzahl:** Ein Exemplar
+    *   **Hintergrund:** Unschärfer Wald
+  Benötigte Zeit: 13.775 ms
+
+  Gesamte Analysezeit (Gemma): 13.775 ms
+
+2. Generierter Text (Llama 3.1):
+    **Die Europäische Zauneidechse: Ein kleiner Held im Grünen**
+    Hallo Kinder! Heute lernen wir eine sehr coole Echsenart kennen: die Europäische Zauneidechse. Sie ist ganz grün und braun, was sie wie ein kleines Blatt Gras aussieht.
+    Diese zauberhafte Kriechtier sonnt sich gerade auf einem Steinhügel im Grünen. Die steinigen Gebiete sind für Eidechsen perfekt zum Sonnenbaden. Dort können sie sich warm anfühlen und sich gleichzeitig vor Raubtieren schützen.
+    Die Umgebung ist ein wunderschöner Wald, der uns viele Geheimnisse zu bieten hat. Wenn wir genauer hinschauen, merken wir, dass es dort Steine und Gras gibt, was genau die richtige Mischung für unsere Eidechse ist.
+    Eine bemerkenswerte Tatsache: Wir sehen nur eine Zauneidechse auf dem Bild. Aber wissen Sie warum? Viele Eidechsen verhalten sich allein, wenn sie hungrig oder müde sind. So können sie sich besser schützen und nicht gestört werden.
+    Das ganze Szenario ist ein wunderbarer Moment der Ruhe und des Gedeihens in unserer Natur. Unsere Europäische Zauneidechse genießt ihren Sonnentag im Grünen und zeigt uns, wie schön es sein kann, einfach zu leben und sich zu sonnen!
+   Benötigte Zeit: 6.106 ms
+
+3. Essenz (Llama 3.1):
+    **Kernaussage für Kinder:**
+    "Die Europäische Zauneidechse ist eine grüne Echsenart, die liebt, in warmen steinigen Gebieten im Grünen zu sonnen. Sie verbringt viel Zeit alleine und schützt sich so vor Raubtieren."
+   Benötigte Zeit: 674 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Europäischer Zauneidechse
+    *   Farbe: Grün braun
+    *   Anzahl: Ein Exemplar
+    *   Verhalten: Sichert sich sonnt
+    *   Umgebung: Steine Gras Wald
+    *   Hintergrund: Unschärfer Wald
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 18.122 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_28.jpg
+  Analyse:
+    ### Analyse des Bildes
+    
+    *   **Name**: Lavendel
+    *   **Farbe**: Blau und Violett
+    *   **Verhalten**: Ganz aufrechter Wachstumszustand
+    *   **Umgebung**: Felder mit ähnlichen Pflanzen
+    *   **Anzahl**: Mehrere Exemplare
+    *   **Hintergrund**: Feld in der Sonne
+  Benötigte Zeit: 8.295 ms
+
+  Gesamte Analysezeit (Llama Vision): 8.295 ms
+
+B. Generierter Text (Deepseek):
+    Hey Kids! Habt ihr jemals die wunderschöne Lavender gesehen? Sie hat Blüten in blau und violett, steht gerade und wächst gemeinsam mit vielen Gleichgesinnten im Feld. Dort, unter der Sonne, sind sie zu finden, ein zauberhafter Anblick, den ihr nicht verpassen wollt!
+   Benötigte Zeit: 11.022 ms
+
+C. Essenz (Deepseek):
+    Lavendel hat schöne Blüten in blau und violett. Sie wachsen im Feld unter der Sonne zusammen mit vielen Gleichgesinnten. Lavendel ist ein zauberhafter Anblick, den man nicht verpassen möchte!
+   Benötigte Zeit: 4.517 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    - Lavendel  
+    - Blau/Violett  
+    - Aufrechter Wachstum  
+    - Felder, Pflanzen  
+    - Mehrere Exemplare  
+    - Sonne, Feld
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 15.899 ms
+
+--- Verwendete Originalbilder ---
+- img_28.jpg

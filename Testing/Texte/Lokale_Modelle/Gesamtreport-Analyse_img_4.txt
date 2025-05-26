@@ -1,0 +1,97 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_4.jpg
+  Analyse:
+    Absolut! Hier ist eine präzise Analyse des Bildes, formatiert als Bullet Points:
+    
+    *   **Tier:** Pferd
+    *   **Farbe:** Braun, weiß
+    *   **Verhalten:** Grast
+    *   **Umgebung:** Wiese
+    *   **Anzahl:** Eins
+    *   **Hintergrund:** Bäume, Vegetation
+  Benötigte Zeit: 16.070 ms
+
+  Gesamte Analysezeit (Gemma): 16.070 ms
+
+2. Generierter Text (Llama 3.1):
+    "Willkommen auf unserer idyllichen Weide! Hier gibt es nur eins: ein wunderschönes Pferd. Sein Fell ist braun mit weißen Flecken - einfach toll!
+    Das Pferd grast gemütlich in der Sonne. Es genießt die frische Luft und die leckere Weide, die so voller Nährstoffen ist. Auf der Wiese sind Bäume und Vegetation zu sehen. Sie spenden Schatten und bieten den Tieren einen besonderen Gefühl von Sicherheit.
+    Das Pferd ist nicht allein auf unserer Weide. Es hat viele Freunde hier, aber es genug Platz, um sich frei zu bewegen. Und so kann es einfach sein Glück genießen."
+    Text ist zwischen 80-100 Wörter lang und stellt sicher, dass die Kerninformationen aus allen bereitgestellten Bildbeschreibungen integriert sind.
+   Benötigte Zeit: 5.065 ms
+
+3. Essenz (Llama 3.1):
+    Ich habe den Text sorgfältig durchgelesen und das absolute Wichtigste herausgefiltert: 
+    "Ein Pferd lebt glücklich auf einer Weide mit viel Platz, frischer Luft und leckerer Weide, die es genießt und hat viele Freunde um sich herum."
+   Benötigte Zeit: 662 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   **Tier:** Pferd
+    *   **Farbe:** Braun weiß
+    *   **Verhalten:** Grast
+    *   **Umgebung:** Wiese
+    *   **Anzahl:** Eins
+    *   **Hintergrund:** Bäume Vegetation
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 18.181 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_4.jpg
+  Analyse:
+    Das Bild zeigt ein Tier. Der Name des Tiers ist nicht auszumachen.
+    
+    Die vorherrschenden Farben sind braun und weiß.
+    
+    Das Tier grast auf einem Grasfeld. Es scheint sich in seinem Element zu befinden, da es sich nicht von dem Feld ablenkt.
+    
+    Die unmittelbare Umgebung besteht aus einem Grasfeld mit einigen Bäumen und Sträuchern im Hintergrund.
+     
+    Es ist nur ein Pferd zu sehen.
+    Das Bild zeigt eine ländliche Szene mit einer Wiese in der Mitte, auf der das Pferd grast. Im Hintergrund sind einige Bäume und Sträucher sowie ein blauer Himmel zu sehen.
+    
+    Ich kann aus dem Bild folgende Informationen ableiten:
+    
+    * Das Tier ist ein Pferd.
+    * Die vorherrschenden Farben sind braun und weiß.
+    * Das Tier grast auf einem Grasfeld.
+    * Es gibt nur eines Pferdes in der Szene.
+    * Der Hintergrund besteht aus einer Wiese, Bäumen und Sträuchern sowie einem blauen Himmel.
+  Benötigte Zeit: 10.577 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.577 ms
+
+B. Generierter Text (Deepseek):
+    Hey Jungen und Mädchen! Habt ihr je ein Pferd auf einem grünen Feld gesehen? Das Bild zeigt genau das: eine schöne Stute mit braunem und weißem Fell, die sanft grasend in der Mitte eines weitläufigen Wiesfelds steht. Im Hintergrund wachsen einige Bäume und Sträucher, während der blaue Himmel über ihr thront. Was macht diesen Anblick besonders? Die Stute genießt offensichtlich ihren Augenblick der Ruhe und des Friedens auf dem Feld. Vielleicht sogar die Farbe ihres Fells ist wie ein Rautenmuster, was viele Pferde besonders an ihr interessieren würde! Genießen wir diesen idyllischen Moment gemeinsam. 😊
+   Benötigte Zeit: 12.378 ms
+
+C. Essenz (Deepseek):
+    Das Pferd mit seinem schönen, braun-weißen Fell steht ruhig auf dem grünen Feld und genießt die Stille. Die Landschaft mit Bäumen, Sträuchern und blauem Himmel ergibt ein idyllisches Bild. Das Pferd ist besonders wegen seines Musterfells interessant.
+   Benötigte Zeit: 4.789 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - Tier: Pferd  
+    - Farbe: Braun, Weiss  
+    - Verhalten: Grasen  
+    - Umgebung: Grasfeld  
+    - Hintergrund: Bäume, Sträucher, Blauer Himmel  
+    - Anzahl: Ein
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 15.388 ms
+
+--- Verwendete Originalbilder ---
+- img_4.jpg

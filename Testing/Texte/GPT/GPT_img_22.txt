@@ -1,0 +1,37 @@
+Rolle 1 – Bildanalyse in Stichpunkten:
+
+Name: Hauskatze
+
+Farbe: Weiß-braun getigert
+
+Verhalten: Blickt ruhig
+
+Umgebung: Teppichboden grau
+
+Anzahl: Eine Katze
+
+Hintergrund: Unschärfer Teppich
+
+Rolle 2 – Kindgerechter Fließtext:
+
+Schau dir diese süße Katze an! Sie hat ein weiches weißes Fell mit braunen Streifen am Kopf. Ihre großen, grünen Augen schauen neugierig in die Kamera. Gerade steht sie ganz still auf einem grauen Teppich und beobachtet aufmerksam ihre Umgebung. Wahrscheinlich fragt sie sich, was als Nächstes passiert. Solche Hauskatzen sind neugierig und gerne bei Menschen. Sie sind tolle Mitbewohner, die gerne kuscheln, spielen oder einfach nur faul in der Sonne liegen. Hast du auch schon mal eine Katze so genau beobachtet?
+
+Rolle 3 – Kernaussage in 3 Sätzen:
+
+Diese Katze ist weiß mit braunen Streifen. Sie schaut neugierig und ruhig. Sie steht auf einem Teppich.
+
+Rolle 4 – Stichpunktliste zur finalen Analyse:
+
+Zusammenfassung:
+
+Tier: Hauskatze
+
+Farbe: Weiß-braun
+
+Anzahl: Eine Katze
+
+Verhalten: Neugierig ruhig
+
+Umgebung: Grauer Teppich
+
+Hintergrund: Unschärfer Boden

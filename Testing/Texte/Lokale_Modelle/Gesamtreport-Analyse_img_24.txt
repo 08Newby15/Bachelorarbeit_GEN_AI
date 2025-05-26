@@ -1,0 +1,99 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_24.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes in Bullet Points, wie angefordert:
+    
+    *   **Name:** Weizenähre
+    *   **Farbe:** Goldbraun
+    *   **Verhalten:** Stehen, reif
+    *   **Umgebung:** Feld
+    *   **Anzahl:** Mehrere
+    *   **Hintergrund:** Blauer Himmel
+  Benötigte Zeit: 16.320 ms
+
+  Gesamte Analysezeit (Gemma): 16.320 ms
+
+2. Generierter Text (Llama 3.1):
+    **Die wunderschönen Weizenähren**
+    Lange nicht hast du uns mehr über die wundervollen Pflanzen in unserem Garten erzählt, die unsere Nahrung liefern und die Welt noch ein bisschen schöner machen! Heute ist es Zeit für etwas Neues: Die wunderbaren Weizenähren!
+    Auf den Bildern siehst du viele, sehr schöne Weizenähren. Sie sind goldbraun, wie das Sonnenlicht, wenn der Tag fast am Ende ist. Die Ähren stehen in einem Feld, wo die Wachsende sich in der warmen Sonne und dem leichten Regen verwöhnt fühlen.
+    Was ist besonders wissenswert an diesen Weizenähren? Sie sind nicht allein auf dem Bild zu sehen. Im Hintergrund glänzt ein strahlend blauer Himmel, der uns zeigt, dass die Natur perfekt in Einklang mit der Welt funktioniert.
+    Sei also neugierig und begeistert dich für die wunderbaren Weizenähren! Sie liefern nicht nur unsere Nahrung, sondern auch noch viel mehr.
+   Benötigte Zeit: 5.492 ms
+
+3. Essenz (Llama 3.1):
+    **Die Kernaussage des Textes:**
+    Die Weizenähren sind nicht nur eine Nahrungsquelle, sondern ein Zeichen dafür, dass die Natur im Einklang mit der Welt funktioniert.
+    *   Die Weizenähren sind goldbraun und stehen in einem Feld, wo sie sich von Sonne und Regen verwöhnen fühlen.
+    *   Im Hintergrund glänzt ein blauer Himmel, was zeigt, dass die Natur perfekt funktioniert.
+   Benötigte Zeit: 943 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Name: Weizenähre
+    *   Farbe: Goldbraun
+    *   Verhalten: Stehen reif
+    *   Umgebung: Feld
+    *   Anzahl: Mehrere
+    *   Hintergrund: Blauer Himmel
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.626 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_24.jpg
+  Analyse:
+    *   **Bildanalyse**
+    *   Das Bild zeigt eine Felder von goldenen Getreideähnlichen Pflanzen
+    *   **Name und Farbe**
+        *   Der Name des genannten Pflanzens ist Weizen oder Ähnliches.
+        *   Die vorherrschenden Farben sind goldbraun und gelblich.
+    *   **Verhalten der Pflanze**
+        *   Es scheint keine Bewegung in dem Bild zu geben. 
+    *   **Umgebung**
+        *   Der Hintergrund ist eine Blau-Grün-Tönung mit einem blauen Himmel und einer grünen Umgebung.
+    *   **Anzahl der Pflanzen**
+        *   Es gibt mehrere Felder voller von den genannten Pflanzen, aber es ist nicht zu erkennen wie viele sich genau in diesem Bild befinden.  
+    *   **Hintergrund des Bildes**
+        *   Das Bild scheint einem Landhaus oder einer ähnlichen Umgebung zu gehören.
+    *   **Fazit**
+        *   Insgesamt kann man daraus schließen, dass es ein gemütliches und ruhiges Leben in diesem Ort gibt.
+  Benötigte Zeit: 10.832 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.832 ms
+
+B. Generierter Text (Deepseek):
+    Hey ihr da! Habt ihr jemals ein Feld voller goldener Weizen gesehen? Das Bild zeigt genau das – eine wunderschöne Aussicht auf golden-braune und gelbe Weizenfelder. Es ist so still, dass man fast die Brise hören könnte, die durch die Pflanzen streicht. Der Hintergrund mit dem blauen Himmel und den grünen Bäumen oder Wiesen macht das Bild zu einem idyllischen Fleckchen Erde.
+    Ihr entdeckt bestimmt, dass es viele Weizenpflanzen gibt, aber genau wie viele? Das bleibt ein kleines Geheimnis. Das Bild erinnert an einen Ort, der friedlich und ruhig ist – perfekt für eine Spaziergang oder vielleicht sogar für ein Picknick in der Natur. Haltet die Augen offen für weitere Entdeckungen!
+   Benötigte Zeit: 13.603 ms
+
+C. Essenz (Deepseek):
+    Das Bild zeigt wunderschöne goldene Weizenfelder mit einem blauen Himmel und grünen Bäumen oder Wiesen. Es ist so still und friedlich, dass man die Brise hören könnte. Wie viele Weizenpflanzen gibt es genau? Das bleibt ein kleines Geheimnis!
+   Benötigte Zeit: 4.537 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **
+    - Field: Golden cereal plants  
+    - Colors: Gold-brown, yellow  
+    - Behavior: No movement  
+    - Environment: Blue-green background with blue sky and green surroundings  
+    - Quantity: Multiple fields (exact count unclear)  
+    - Setting: Near a rural house or similar area  
+    - Atmosphere: Peaceful
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 15.897 ms
+
+--- Verwendete Originalbilder ---
+- img_24.jpg

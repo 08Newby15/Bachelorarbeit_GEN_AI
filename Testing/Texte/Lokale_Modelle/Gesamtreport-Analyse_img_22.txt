@@ -1,0 +1,89 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_22.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes, basierend auf den Anweisungen:
+    
+    *   **Tier:** Europäischer Dachs
+    *   **Farbe:** Braun, schwarz
+    *   **Verhalten:** Gräbt Erde
+    *   **Umgebung:** Grasland
+    *   **Anzahl:** Ein
+    *   **Hintergrund:** Verschwommen, grün
+  Benötigte Zeit: 15.561 ms
+
+  Gesamte Analysezeit (Gemma): 15.561 ms
+
+2. Generierter Text (Llama 3.1):
+    Hier ist ein Text, der sich auf die vorliegenden Informationen basiert:
+    "Bist du bereit, das Geheimnis eines wahren Ausgrabers zu lüften? Hier kommt er: unser kleiner Freund, der Europäische Dachs!
+    Das Foto zeigt unseren tapferen Helden ganz allein in seinem Grasland. Seine Farbe ist ein wunderbares Mischmasch aus Braun und Schwarz. Wenn du ihn genau ansiehst, siehst du, wie er fleißig die Erde gräbt.
+    Doch warum tut er das? Richtig, um nach Nahrung zu suchen! Er macht sich nicht nur daran, sondern ist auch super schnell dabei. Seine Schnelligkeit und seine Fähigkeit, in der Erde nachzuspüren, machen ihn zum Meister seiner Welt."
+    Ich hoffe der Text gefällt dir!
+   Benötigte Zeit: 5.054 ms
+
+3. Essenz (Llama 3.1):
+    Ich habe den Text gelesen und die Kernaussage gefunden!
+    **Die absolute Kernaussage:**
+    Unsere kleine Freunde, die Europäischen Dachse, graben in der Erde nach Nahrung. Sie sind schnell und haben eine besondere Fähigkeit, was sie zu Meistern ihrer Welt macht!
+   Benötigte Zeit: 693 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    *   Tier: Europäischer Dachs
+    *   Farbe: Braun schwarz
+    *   Verhalten: Erdgraben
+    *   Umgebung: Grasland
+    *   Anzahl: Einzelnes
+    *   Hintergrund: Unschärfe grün
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.615 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_22.jpg
+  Analyse:
+    Analyse des angefügten Bildes:
+    
+    *   Das Bild zeigt ein Tier: **Katze**.
+    *   Farbe: Die Katze ist weiß mit braunen Streifen auf dem Kopf und Ohr. Der Rest der Körperfarbe ist weiß.
+    *   Verhalten: Die Katze blickt direkt in die Kamera und scheint interessiert zu sein.
+    *   Umgebung: Das Tier steht auf einem weißen Teppich, der mit braunen Streifen verziert ist.
+    *   Anzahl: Es gibt nur eine sichtbare Katze.
+    *   Hintergrund: Der Hintergrund des Bildes ist weiß und zeigt ein Muster von kleinen braunen Punkten.
+  Benötigte Zeit: 10.058 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.058 ms
+
+B. Generierter Text (Deepseek):
+    Schau mal, das Bild zeigt eine süße Katze! Sie ist weiß mit braunen Streifen auf dem Kopf und den Ohren. Die Katze steht auf einem weißen Teppich, der mit braunen Streifen verziert ist. Im Hintergrund gibt es ein Muster aus kleinen braunen Punkten. Die Katze blickt direkt in die Kamera, als ob sie neugierig oder gespannt ist. Das ist cool!
+   Benötigte Zeit: 10.419 ms
+
+C. Essenz (Deepseek):
+    Das Bild zeigt eine süße Katze mit weißen und braunen Streifen. Sie steht auf einem weißen Teppich mit braunen Mustern und blickt direkt in die Kamera, als ob sie neugierig ist. Der Hintergrund hat kleine braune Punkte.
+   Benötigte Zeit: 3.540 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    **  
+    - Tier: Katze  
+    - Farbe: Weiß/ Braunstreifen  
+    - Verhalten: Kamera anblickend  
+    - Umgebung: Weiße Teppich  
+    - Anzahl: Einer  
+    - Hintergrund: Weiße Punkte
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 15.992 ms
+
+--- Verwendete Originalbilder ---
+- img_22.jpg

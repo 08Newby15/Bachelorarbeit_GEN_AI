@@ -1,0 +1,157 @@
+.pipeline-columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pipeline-column {
+  flex: 1;
+  min-width: 300px; 
+  border: 1px solid var(--border-color-light); 
+  padding: calc(2 * var(--spacing-unit));
+  border-radius: var(--border-radius);
+  background-color: #fdfdfd;
+}
+
+.pipeline-column h2 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: calc(2 * var(--spacing-unit));
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: var(--spacing-unit);
+}
+
+.pipeline-column h3 {
+  font-size: 1.1rem;
+  margin-top: calc(2.5 * var(--spacing-unit));
+  margin-bottom: var(--spacing-unit);
+  color: var(--text-color);
+}
+
+.pipeline-column ul {
+  list-style-position: inside; 
+  padding-left: 0;
+}
+
+.pipeline-column ul li,
+.pipeline-column p {
+  margin-left: calc(2 * var(--spacing-unit));
+  margin-bottom: var(--spacing-unit);
+}
+
+.image-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: calc(2 * var(--spacing-unit));
+}
+
+.original-images-container {
+  flex: 1 1 60%; 
+  min-width: 250px;
+  margin-right: 10px; 
+}
+
+.original-images-container p strong,
+.generated-image-container p strong {
+  display: block;
+  margin-bottom: var(--spacing-unit);
+}
+
+.thumbnails-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.thumbnail-item {
+  width: calc(50% - 5px); 
+}
+
+.thumbnail-item img,
+.generated-image-container img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  display: block;
+}
+
+.generated-image-container {
+  flex: 1 1 35%;
+  min-width: 150px;
+}
+
+.markdown-output {
+  margin-left: 0.5em; 
+  line-height: 1.6;
+}
+
+.markdown-output h3 {
+  font-size: 1.05rem;
+  color: var(--text-color); 
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+}
+
+.markdown-output ul {
+  list-style-type: disc; 
+  padding-left: 20px;
+  margin-top: 0.2em;
+}
+
+.markdown-output li {
+  margin-bottom: 0.2em; 
+}
+
+.timing-table {
+  width: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 0.85em;
+  color: #555;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.timing-table caption {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 3px;
+  caption-side: top;
+}
+
+.timing-table td {
+  padding: 2px 8px 2px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.timing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.timing-table td:last-child {
+  text-align: right;
+}
+
+.timing-info {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.code-block {
+  background-color: #f8f9fa;
+  border: 1px solid var(--border-color-light);
+  border-radius: 4px;
+  padding: 10px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 1.2em;
+margin-left:15rem;
+}

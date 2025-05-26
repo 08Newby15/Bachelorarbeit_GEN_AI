@@ -1,0 +1,112 @@
+.loading-indicator,
+.error-message,
+.progress-steps {
+  margin-top: calc(3 * var(--spacing-unit));
+  margin-bottom: calc(3 * var(--spacing-unit));
+  padding: calc(2 * var(--spacing-unit));
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+  text-align: center;
+}
+
+.progress-steps h3 {
+  margin-bottom: calc(1.5 * var(--spacing-unit));
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+.progress-steps ul {
+  list-style: none;
+  padding: 0;
+}
+.progress-steps li {
+  margin-bottom: var(--spacing-unit);
+  padding: calc(0.5 * var(--spacing-unit)) 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color-light);
+}
+.progress-steps li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.progress-steps li span:first-child {
+  flex-grow: 1; 
+  margin-right: var(--spacing-unit);
+  font-weight: 500;
+}
+
+.progress-steps li ng-container[ngSwitchCase="'pending'"] {
+  color: var(--text-color-light);
+}
+.progress-steps li ng-container[ngSwitchCase="'in-progress'"] {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.progress-steps li ng-container[ngSwitchCase="'completed'"] {
+  color: var(--success-color);
+  font-weight: 500;
+}
+.progress-steps li ng-container[ngSwitchCase="'error'"] {
+  color: var(--error-color);
+  font-weight: 500;
+}
+
+.progress-steps progress {
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-left: var(--spacing-unit);
+  vertical-align: middle;
+}
+.progress-steps progress::-webkit-progress-bar {
+  background-color: var(--border-color-light);
+  border-radius: 4px;
+}
+.progress-steps progress::-webkit-progress-value {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+.progress-steps progress::-moz-progress-bar {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.download-buttons {
+  margin-top: calc(3 * var(--spacing-unit));
+  padding-top: calc(2 * var(--spacing-unit));
+  border-top: 1px solid var(--border-color-light);
+  text-align: center;
+}
+.download-buttons button {
+  margin: 0 calc(0.5 * var(--spacing-unit));
+}
+
+.spinner-inline {
+  display: inline-block;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  margin-right: 5px;
+  vertical-align: middle;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,93 @@
+Gesamtauswertung der Bildanalyse und Textgenerierung
+========================================================
+
+--- Kombination 1 (Gemma, Llama 3.1, Flux) ---
+
+1. Bildanalysen (Gemma):
+  Datei: img_23.jpg
+  Analyse:
+    Hier ist eine Analyse des Bildes gemäß Ihren Kriterien:
+    
+    *   **Name:** Kolibrinäcker.
+    *   **Farbe:** Grün, blau, braun.
+    *   **Verhalten:** Füttern, fliegen.
+    *   **Umgebung:** Blätter, Zweig.
+    *   **Anzahl:** Zwei.
+    *   **Hintergrund:** Verschwommen, grün.
+  Benötigte Zeit: 16.596 ms
+
+  Gesamte Analysezeit (Gemma): 16.596 ms
+
+2. Generierter Text (Llama 3.1):
+    Entdecke die Welt der Kolibris!
+    Hier ist eine wundervolle Szene: zwei Kleine, die sich über ein leckeres Frühstück freuen! Sie sitzen in einem grünen Blätterwald, umgeben von Zweigen und Blumen. Die Kolibris haben besondere Fähigkeiten. Sie fliegen blitzschnell und suchen nach Nektar in den Blumen. Hier auf dem Bild sind sie dabei, sich zu stärken, bevor sie wieder losfliegen.
+    Aber was ist so besonders an diesen kleinen Vögeln? Sie können sehr schnell fliegen! Aber das ist nicht alles: ihre Federn glänzen in allen Farben der Natur – grün, blau und braun. Sie sind ein lebendiges Beispiel für die Vielfalt der Welt.
+    So viel Wunderbarkeit auf einem Bild: zwei Kolibris, die sich stärken und sich prächtig aussehen!
+   Benötigte Zeit: 5.237 ms
+
+3. Essenz (Llama 3.1):
+    Die Kernaussage oder die Essenz des Textes lautet:
+    "Kolibris sind kleine Vögel, die sehr schnell fliegen können und in verschiedenen Farben glänzen."
+   Benötigte Zeit: 447 ms
+
+4. Verwendete Keywords für Flux (Original - Llama 3.1):
+    **
+    
+    • Name: Kolibrinäcker
+    • Farbe: Grün, Blau, Braun
+    • Verhalten: Füttern, Fliegen
+    • Umgebung: Blätter, Zweig
+    • Anzahl: Zwei
+    • Hintergrund: Verschwommen, Grün
+
+5. Gemeinschaftsbild (Flux - Original):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 17.995 ms
+
+
+--- Kombination 2 (Llama Vision, Deepseek, Flux) ---
+
+A. Bildanalysen (Llama Vision):
+  Datei: img_23.jpg
+  Analyse:
+    Analyse des Bildes:
+    
+    ### Spezifische Informationen zum Bild:
+    
+    *   Das Bild zeigt eine Kardamompflanze (Centaurea cyanus) mit einer Blüte und einem Stengel. 
+        Die Pflanze hat zwei vorherrschende Farben, grün und violett.
+        Die Blütenblätter sind violett gefärbt und die Stengel ist grün gefärbt.
+        Auf der Pflanze befindet sich eine Blüte mit einer violetten Farbe. 
+        Der Hintergrund des Bildes besteht aus einem blauen Himmel, welcher im Hintergrund zu sehen ist.
+        Die Anzahl der sichtbaren Exemplare dieser Pflanzen beträgt 2. Das erste Pflanzenniveau liegt auf einer Ebene mit einer Blüte und einem Stengel. 
+        Auf der zweiten Ebene befindet sich eine weitere Blüte mit einem Stengel. Die beiden Pflanzen sind nebeneinander stehend zu sehen.
+        Der Hintergrund des Bildes besteht aus einem blauen Himmel, welcher im Hintergrund zu sehen ist.
+  Benötigte Zeit: 10.927 ms
+
+  Gesamte Analysezeit (Llama Vision): 10.927 ms
+
+B. Generierter Text (Deepseek):
+    Hey ihr Lieben! Schaut mal diese wundersame Pflanze an – es ist der Kardamom! Sie hat eine violette Blüte und grünen Stengel, genau wie ihre kleine Schwester daneben. Der Himmel hinter ihnen ist blau, als ob man ihn mit Wasserfarbe gemalt hat. 
+    Kardamom ist eine besondere Pflanze, die in vielen Ländern wächst und oft in der Küche verwendet wird, um süße oder würzige Gerichte zuzubereiten. Hat ihr schon mal jemand von Kardamomkapseln erzählt? Diese Pflanzen sind nicht nur schön, sondern auch lecker!
+   Benötigte Zeit: 11.131 ms
+
+C. Essenz (Deepseek):
+    Die Kardamom ist eine magische Pflanze mit violett-blühenden Blüten und grünen Stengeln, die in vielen Ländern wächst und lecker in Süßigkeiten und würzige Gerichte kommt.
+   Benötigte Zeit: 5.481 ms
+
+D. Verwendete Keywords für Flux (Vergleich - Deepseek):
+    - Kardamompflanze  
+    - Violetta & Grün  
+    - 2 Exemplare  
+    - Blüten & Stengel  
+    - Hintergrund Himmel  
+    - Blau Farbe  
+    - Stillstand Verhalten  
+    - Pflanzenniveau Ebene
+
+E. Gemeinschaftsbild (Flux - Vergleich):
+  (Bild wurde generiert - siehe Web-Ansicht oder PDF)
+   Benötigte Zeit: 16.423 ms
+
+--- Verwendete Originalbilder ---
+- img_23.jpg

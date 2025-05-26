@@ -1,0 +1,67 @@
+<div class="container">
+  <h1>Bildanalyse und Textgenerierung für Vergleich</h1>
+
+  <app-image-upload (filesDropped)="onFilesReceived($event)"></app-image-upload>
+
+  <div *ngIf="isLoading" class="progress-steps">
+    <h3>Verarbeitungsfortschritt</h3>
+    <ul>
+      <li
+        *ngFor="let step of steps$ | async; let i = index"
+        [ngSwitch]="step.status"
+      >
+        <span>{{ step.name }}:</span>
+        <ng-container *ngSwitchCase="'pending'">⏳ Ausstehend</ng-container>
+        <ng-container *ngSwitchCase="'running'">
+          <div class="spinner-inline"></div>
+          Am Laufen...
+          <progress
+            *ngIf="i === 0 && step.progress !== undefined"
+            [value]="step.progress"
+            max="100"
+            style="margin-left: 10px; width: 100px; vertical-align: middle"
+          ></progress>
+          <span *ngIf="i === 0 && step.progress !== undefined">
+            {{ step.progress }}%</span
+          >
+        </ng-container>
+        <ng-container *ngSwitchCase="'completed'"
+          >✅ Abgeschlossen</ng-container
+        >
+        <ng-container *ngSwitchCase="'error'">❌ Fehler</ng-container>
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="error && !isLoading" class="error-message">
+    <p>Fehler: {{ error }}</p>
+  </div>
+
+  <app-processing-display
+    *ngIf="!isLoading && (originalPipelineData || comparisonPipelineData)"
+    [originalData]="originalPipelineData"
+    [comparisonData]="comparisonPipelineData"
+  >
+  </app-processing-display>
+
+  <div
+    *ngIf="!isLoading && (originalPipelineData || comparisonPipelineData)"
+    class="download-buttons"
+    style="margin-top: 20px; text-align: center; padding-bottom: 20px"
+  >
+    <button 
+      *ngIf="originalPipelineData"
+      (click)="triggerDownload('pdf')" 
+      style="margin-right: 10px">
+      PDF (Kombi 1)
+    </button>
+    <button 
+      *ngIf="comparisonPipelineData"
+      (click)="triggerDownload('comparison-pdf')">
+      PDF (Kombi 2)
+    </button>
+  </div>
+  <div *ngIf="!isLoading && (originalPipelineData || comparisonPipelineData)" class="download-buttons full-report-download" style="margin-top: 15px; text-align: center; padding-bottom: 20px;">
+    <button (click)="triggerDownload('full-report-txt')">Gesamten Report als TXT herunterladen</button>
+</div>
+</div>
