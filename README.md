@@ -1,13 +1,17 @@
 ## Testbilder und Ergebnisse
-Im Ordner Testing befinden sich:
-* die verwendeten Bilder inklusive der Quellen
-* die erzeugten Texte der LLMs
-* die erzeugten Bilder der LLMs
-* * Die Bilder der lokalen LLMs sind in den Pdfs zu finden
- 
-----------------------------------------------------------------------------------------------------------
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
 
+Im Ordner Testing befinden sich:
+
+- die verwendeten Bilder inklusive der Quellen
+- die erzeugten Texte der LLMs
+- die erzeugten Bilder der LLMs
+- - Die Bilder der lokalen LLMs sind in den Pdfs zu finden
+
+---
+
+## Gemini 2.5 Pro wurde genutzt, um den Code zu optimieren und Fehler zu finden.
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
 
 ## Development server
 
